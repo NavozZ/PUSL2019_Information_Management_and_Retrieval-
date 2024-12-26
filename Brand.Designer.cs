@@ -42,8 +42,10 @@
             this.DgvBrand.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvBrand.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DgvBrand.Location = new System.Drawing.Point(0, 0);
+            this.DgvBrand.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DgvBrand.Name = "DgvBrand";
-            this.DgvBrand.Size = new System.Drawing.Size(1184, 690);
+            this.DgvBrand.RowHeadersWidth = 51;
+            this.DgvBrand.Size = new System.Drawing.Size(1579, 850);
             this.DgvBrand.TabIndex = 3;
             // 
             // panel1
@@ -52,9 +54,10 @@
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 690);
+            this.panel1.Location = new System.Drawing.Point(0, 850);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1184, 71);
+            this.panel1.Size = new System.Drawing.Size(1579, 87);
             this.panel1.TabIndex = 2;
             // 
             // btnAdd
@@ -62,9 +65,10 @@
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Image = global::PUSL2019_Information_Management_and_Retrieval_.Properties.Resources.icons8_add_50;
-            this.btnAdd.Location = new System.Drawing.Point(1111, 16);
+            this.btnAdd.Location = new System.Drawing.Point(1481, 20);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(47, 41);
+            this.btnAdd.Size = new System.Drawing.Size(63, 50);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.UseVisualStyleBackColor = true;
             // 
@@ -76,21 +80,22 @@
             this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.label1.Image = global::PUSL2019_Information_Management_and_Retrieval_.Properties.Resources.icons8_brand_30;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(31, 16);
+            this.label1.Location = new System.Drawing.Point(47, 17);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 41);
+            this.label1.Size = new System.Drawing.Size(139, 50);
             this.label1.TabIndex = 0;
             this.label1.Text = "Manage Brand";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Brand
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 761);
+            this.ClientSize = new System.Drawing.Size(1579, 937);
             this.Controls.Add(this.DgvBrand);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Brand";
             this.Text = "Brand";
             ((System.ComponentModel.ISupportInitialize)(this.DgvBrand)).EndInit();
