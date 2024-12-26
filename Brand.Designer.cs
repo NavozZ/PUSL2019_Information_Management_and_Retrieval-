@@ -28,25 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.DgvBrand = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAdd = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvBrand)).BeginInit();
+            this.DgvBrand = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvBrand)).BeginInit();
             this.SuspendLayout();
-            // 
-            // DgvBrand
-            // 
-            this.DgvBrand.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.DgvBrand.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvBrand.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DgvBrand.Location = new System.Drawing.Point(0, 0);
-            this.DgvBrand.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.DgvBrand.Name = "DgvBrand";
-            this.DgvBrand.RowHeadersWidth = 51;
-            this.DgvBrand.Size = new System.Drawing.Size(1579, 850);
-            this.DgvBrand.TabIndex = 3;
             // 
             // panel1
             // 
@@ -88,6 +76,16 @@
             this.label1.Text = "Manage Brand";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // DgvBrand
+            // 
+            this.DgvBrand.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.DgvBrand.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvBrand.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DgvBrand.Location = new System.Drawing.Point(0, 0);
+            this.DgvBrand.Name = "DgvBrand";
+            this.DgvBrand.Size = new System.Drawing.Size(1184, 690);
+            this.DgvBrand.TabIndex = 3;
+            // 
             // Brand
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -98,17 +96,16 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Brand";
             this.Text = "Brand";
-            ((System.ComponentModel.ISupportInitialize)(this.DgvBrand)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DgvBrand)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView DgvBrand;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView DgvBrand;
     }
 }
