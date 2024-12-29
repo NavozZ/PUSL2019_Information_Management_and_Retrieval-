@@ -14,9 +14,9 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 {
     public partial class Main : Form
     {
-        private SqlConnection cn = new SqlConnection();
-        private SqlCommand cm = new SqlCommand();
-        private DBConnect dbcon = new DBConnect();
+         SqlConnection cn = new SqlConnection();
+         SqlCommand cm = new SqlCommand();
+         DBConnect dbcon = new DBConnect();
 
         public Main()
         {
