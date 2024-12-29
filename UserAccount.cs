@@ -42,5 +42,10 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         {
 
         }
+
+        private void UserAccount_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
