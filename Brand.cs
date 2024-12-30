@@ -22,10 +22,10 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
-            LoardBrand();
+            LoadBrand();
         }
 
-        public void LoardBrand()
+        public void LoadBrand()
         {
             int i = 0;
             DgvBrand.Rows.Clear();
@@ -77,7 +77,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
                 brand_Module.btnUpdate.Enabled = true;
                 brand_Module.ShowDialog();
             }
-            LoardBrand();
+            LoadBrand();
         }
     }
 }
