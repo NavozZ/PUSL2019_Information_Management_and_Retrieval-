@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace PUSL2019_Information_Management_and_Retrieval_
 {
-    public partial class Form1 : Form
+    public partial class DASHBOARD : Form
     {
-        public Form1()
+        public DASHBOARD()
         {
             InitializeComponent();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

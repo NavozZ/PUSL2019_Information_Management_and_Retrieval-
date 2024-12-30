@@ -1,6 +1,6 @@
 ﻿namespace PUSL2019_Information_Management_and_Retrieval_
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.PanelMain = new System.Windows.Forms.Panel();
             this.PanelTitle = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.SidePanel = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnlogout = new System.Windows.Forms.Button();
+            this.PanelSubSettings = new System.Windows.Forms.Panel();
             this.btnstore = new System.Windows.Forms.Button();
             this.btnUser = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSettings = new System.Windows.Forms.Button();
             this.PanelSubRecord = new System.Windows.Forms.Panel();
             this.btnPOSrecord = new System.Windows.Forms.Button();
             this.btnSHistory = new System.Windows.Forms.Button();
@@ -58,7 +58,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelTitle.SuspendLayout();
             this.SidePanel.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.PanelSubSettings.SuspendLayout();
             this.PanelSubRecord.SuspendLayout();
             this.PanelSubStock.SuspendLayout();
             this.PanelSubProduct.SuspendLayout();
@@ -66,16 +66,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel2
+            // PanelMain
             // 
-            this.panel2.AutoScroll = true;
-            this.panel2.BackColor = System.Drawing.Color.LightGreen;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(230, 40);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(954, 721);
-            this.panel2.TabIndex = 5;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.PanelMain.AutoScroll = true;
+            this.PanelMain.BackColor = System.Drawing.Color.LightYellow;
+            this.PanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelMain.Location = new System.Drawing.Point(230, 40);
+            this.PanelMain.Name = "PanelMain";
+            this.PanelMain.Size = new System.Drawing.Size(760, 504);
+            this.PanelMain.TabIndex = 5;
+            this.PanelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // PanelTitle
             // 
@@ -83,14 +83,15 @@
             this.PanelTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelTitle.Location = new System.Drawing.Point(230, 0);
             this.PanelTitle.Name = "PanelTitle";
-            this.PanelTitle.Size = new System.Drawing.Size(954, 40);
+            this.PanelTitle.Size = new System.Drawing.Size(760, 40);
             this.PanelTitle.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Modern No. 20", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.label3.Location = new System.Drawing.Point(453, 12);
+            this.label3.Location = new System.Drawing.Point(354, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 22);
             this.label3.TabIndex = 3;
@@ -101,9 +102,9 @@
             // 
             this.SidePanel.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
             this.SidePanel.AutoScroll = true;
-            this.SidePanel.Controls.Add(this.button4);
-            this.SidePanel.Controls.Add(this.panel1);
-            this.SidePanel.Controls.Add(this.button1);
+            this.SidePanel.Controls.Add(this.btnlogout);
+            this.SidePanel.Controls.Add(this.PanelSubSettings);
+            this.SidePanel.Controls.Add(this.btnSettings);
             this.SidePanel.Controls.Add(this.PanelSubRecord);
             this.SidePanel.Controls.Add(this.btnRecord);
             this.SidePanel.Controls.Add(this.btnSupplier);
@@ -116,33 +117,34 @@
             this.SidePanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.SidePanel.Location = new System.Drawing.Point(0, 0);
             this.SidePanel.Name = "SidePanel";
-            this.SidePanel.Size = new System.Drawing.Size(230, 761);
+            this.SidePanel.Size = new System.Drawing.Size(230, 544);
             this.SidePanel.TabIndex = 3;
             // 
-            // button4
+            // btnlogout
             // 
-            this.button4.BackColor = System.Drawing.Color.IndianRed;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(0, 872);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(213, 45);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "Logout";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnlogout.BackColor = System.Drawing.Color.IndianRed;
+            this.btnlogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnlogout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnlogout.FlatAppearance.BorderSize = 0;
+            this.btnlogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlogout.Location = new System.Drawing.Point(0, 872);
+            this.btnlogout.Name = "btnlogout";
+            this.btnlogout.Size = new System.Drawing.Size(213, 45);
+            this.btnlogout.TabIndex = 12;
+            this.btnlogout.Text = "Logout";
+            this.btnlogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnlogout.UseVisualStyleBackColor = false;
+            this.btnlogout.Click += new System.EventHandler(this.btnlogout_Click);
             // 
-            // panel1
+            // PanelSubSettings
             // 
-            this.panel1.Controls.Add(this.btnstore);
-            this.panel1.Controls.Add(this.btnUser);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 782);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(213, 90);
-            this.panel1.TabIndex = 11;
+            this.PanelSubSettings.Controls.Add(this.btnstore);
+            this.PanelSubSettings.Controls.Add(this.btnUser);
+            this.PanelSubSettings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelSubSettings.Location = new System.Drawing.Point(0, 782);
+            this.PanelSubSettings.Name = "PanelSubSettings";
+            this.PanelSubSettings.Size = new System.Drawing.Size(213, 90);
+            this.PanelSubSettings.TabIndex = 11;
             // 
             // btnstore
             // 
@@ -158,6 +160,7 @@
             this.btnstore.Text = "Store";
             this.btnstore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnstore.UseVisualStyleBackColor = false;
+            this.btnstore.Click += new System.EventHandler(this.btnstore_Click);
             // 
             // btnUser
             // 
@@ -173,20 +176,22 @@
             this.btnUser.Text = "User";
             this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUser.UseVisualStyleBackColor = false;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
-            // button1
+            // btnSettings
             // 
-            this.button1.BackColor = System.Drawing.Color.LightGreen;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(0, 737);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 45);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Settings";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSettings.BackColor = System.Drawing.Color.LightGreen;
+            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Location = new System.Drawing.Point(0, 737);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(213, 45);
+            this.btnSettings.TabIndex = 10;
+            this.btnSettings.Text = "Settings";
+            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.UseVisualStyleBackColor = false;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // PanelSubRecord
             // 
@@ -212,6 +217,7 @@
             this.btnPOSrecord.Text = "POS Record";
             this.btnPOSrecord.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPOSrecord.UseVisualStyleBackColor = false;
+            this.btnPOSrecord.Click += new System.EventHandler(this.btnPOSrecord_Click);
             // 
             // btnSHistory
             // 
@@ -227,6 +233,7 @@
             this.btnSHistory.Text = "Sale History";
             this.btnSHistory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSHistory.UseVisualStyleBackColor = false;
+            this.btnSHistory.Click += new System.EventHandler(this.btnSHistory_Click);
             // 
             // btnRecord
             // 
@@ -241,6 +248,7 @@
             this.btnRecord.Text = "Record";
             this.btnRecord.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRecord.UseVisualStyleBackColor = false;
+            this.btnRecord.Click += new System.EventHandler(this.btnRecord_Click);
             // 
             // btnSupplier
             // 
@@ -255,6 +263,7 @@
             this.btnSupplier.Text = "Supplier";
             this.btnSupplier.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSupplier.UseVisualStyleBackColor = false;
+            this.btnSupplier.Click += new System.EventHandler(this.btnSupplier_Click);
             // 
             // PanelSubStock
             // 
@@ -280,6 +289,7 @@
             this.btnStockAdj.Text = "Stock Adjustment";
             this.btnStockAdj.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStockAdj.UseVisualStyleBackColor = false;
+            this.btnStockAdj.Click += new System.EventHandler(this.btnStockAdj_Click);
             // 
             // btnStockEntry
             // 
@@ -295,6 +305,7 @@
             this.btnStockEntry.Text = "Stock Entry";
             this.btnStockEntry.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStockEntry.UseVisualStyleBackColor = false;
+            this.btnStockEntry.Click += new System.EventHandler(this.btnStockEntry_Click);
             // 
             // btnstock
             // 
@@ -309,6 +320,7 @@
             this.btnstock.Text = "in Stock";
             this.btnstock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnstock.UseVisualStyleBackColor = false;
+            this.btnstock.Click += new System.EventHandler(this.btnstock_Click);
             // 
             // PanelSubProduct
             // 
@@ -335,6 +347,7 @@
             this.btnBrand.Text = "Brand";
             this.btnBrand.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBrand.UseVisualStyleBackColor = false;
+            this.btnBrand.Click += new System.EventHandler(this.btnBrand_Click);
             // 
             // btnCategory
             // 
@@ -350,6 +363,7 @@
             this.btnCategory.Text = "Category";
             this.btnCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCategory.UseVisualStyleBackColor = false;
+            this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
             // 
             // btnProductList
             // 
@@ -365,6 +379,7 @@
             this.btnProductList.Text = "Product List";
             this.btnProductList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProductList.UseVisualStyleBackColor = false;
+            this.btnProductList.Click += new System.EventHandler(this.btnProductList_Click);
             // 
             // btnProduct
             // 
@@ -379,6 +394,7 @@
             this.btnProduct.Text = "Product";
             this.btnProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProduct.UseVisualStyleBackColor = false;
+            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
             // 
             // btndashboard
             // 
@@ -395,6 +411,7 @@
             this.btndashboard.Text = "Dashboard";
             this.btndashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btndashboard.UseVisualStyleBackColor = false;
+            this.btndashboard.Click += new System.EventHandler(this.btndashboard_Click);
             // 
             // panellogo
             // 
@@ -438,21 +455,21 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGreen;
-            this.ClientSize = new System.Drawing.Size(1184, 761);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(990, 544);
+            this.Controls.Add(this.PanelMain);
             this.Controls.Add(this.PanelTitle);
             this.Controls.Add(this.SidePanel);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Main";
+            this.Text = "New Era Super Market";
             this.PanelTitle.ResumeLayout(false);
             this.PanelTitle.PerformLayout();
             this.SidePanel.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.PanelSubSettings.ResumeLayout(false);
             this.PanelSubRecord.ResumeLayout(false);
             this.PanelSubStock.ResumeLayout(false);
             this.PanelSubProduct.ResumeLayout(false);
@@ -465,15 +482,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel PanelMain;
         private System.Windows.Forms.Panel PanelTitle;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel SidePanel;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnlogout;
+        private System.Windows.Forms.Panel PanelSubSettings;
         private System.Windows.Forms.Button btnstore;
         private System.Windows.Forms.Button btnUser;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Panel PanelSubRecord;
         private System.Windows.Forms.Button btnPOSrecord;
         private System.Windows.Forms.Button btnSHistory;
