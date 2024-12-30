@@ -33,7 +33,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         public void LoadCategory()
         {
             cboCategory.Items.Clear();
-            cboCategory.DataSource = dbcon.getTable("SELECT * FROM tbCategory");
+            cboCategory.DataSource = dbcon.getTable("SELECT * FROM tbcategory");
             cboCategory.DisplayMember = "category";
             cboCategory.ValueMember = "id";
         }
@@ -74,7 +74,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             {
                 if (MessageBox.Show("Are you sure want to save this product?", "Save Product", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    cm = new SqlCommand("INSERT INTO tbProduct (pcode, barcode, pdesc, bid, cid, price, reorder)VALUES (@pcode,@barcode,@pdesc,@bid,@cid,@price,@reorder)", cm);
+                    cm = new SqlCommand("INSERT INTO tbProduct (pcode, barcode, pdesc, bid, cid, price, reorder)VALUES (@pcode,@barcode,@pdesc,@bid,@cid,@price,@reorder)", cn);
                     cm.Parameters.AddWithValue("@pcode",txtPcode.Text);
                     cm.Parameters.AddWithValue("@barcode",txtBarcode.Text);
                     cm.Parameters.AddWithValue("@pdesc",txtPdesc.Text);
@@ -112,7 +112,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
                 if(MessageBox.Show("Are you sure want to update this product? ", "Update product",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cm = new SqlCommand("UPDATE tbProduct SET barcode=@barcode,pdesc=@pdesc,bid=@bid,cid=@cid,price=@price , reorder=@reorder WHERE pcode LIKE @pcode",cn);
-                    cm = new SqlCommand("INSERT INTO tbProduct (pcode, barcode, pdesc, bid, cid, price, reorder)VALUES (@pcode,@barcode,@pdesc,@bid,@cid,@price,@reorder)", cm);
+                    cm = new SqlCommand("INSERT INTO tbProduct (pcode, barcode, pdesc, bid, cid, price, reorder)VALUES (@pcode,@barcode,@pdesc,@bid,@cid,@price,@reorder)", cn);
                     cm.Parameters.AddWithValue("@pcode", txtPcode.Text);
                     cm.Parameters.AddWithValue("@barcode", txtBarcode.Text);
                     cm.Parameters.AddWithValue("@pdesc", txtPdesc.Text);
@@ -135,9 +135,12 @@ namespace PUSL2019_Information_Management_and_Retrieval_
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
-    internal class DBConnect
-    {
-    }
+    
 }
