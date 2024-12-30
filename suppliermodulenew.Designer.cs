@@ -54,7 +54,7 @@
             // 
             this.labelclose.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelclose.ForeColor = System.Drawing.Color.White;
-            this.labelclose.Image = global::PUSL2019_Information_Management_and_Retrieval_.Properties.Resources.icons8_cross_50;
+            this.labelclose.Image = global::PUSL2019_Information_Management_and_Retrieval_.Properties.Resources.;
             this.labelclose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelclose.Location = new System.Drawing.Point(909, 11);
             this.labelclose.Name = "labelclose";
