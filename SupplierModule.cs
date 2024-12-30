@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PUSL2019_Information_Management_and_Retrieval_
 {
-    public partial class Form1 : Form
+    public partial class SupplierModule : Form
     {
-        public Form1()
+        public SupplierModule()
         {
             InitializeComponent();
         }
@@ -22,10 +22,18 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
         }
 
-        private void btnSupplier_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
-            openChildForm(new supplier());
-            hideSubmenu();
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
 
         }
     }

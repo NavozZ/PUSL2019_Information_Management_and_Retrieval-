@@ -31,5 +31,10 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+      
+        }
     }
 }
