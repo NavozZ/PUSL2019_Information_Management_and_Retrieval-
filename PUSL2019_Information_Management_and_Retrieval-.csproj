@@ -118,18 +118,6 @@
     <Compile Include="SupplierModule.Designer.cs">
       <DependentUpon>SupplierModule.cs</DependentUpon>
     </Compile>
-    <Compile Include="suppliermodulenew.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="suppliermodulenew.Designer.cs">
-      <DependentUpon>suppliermodulenew.cs</DependentUpon>
-    </Compile>
-    <Compile Include="suppliernew.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="suppliernew.Designer.cs">
-      <DependentUpon>suppliernew.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Brand.resx">
       <DependentUpon>Brand.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,12 +152,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SupplierModule.resx">
       <DependentUpon>SupplierModule.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="suppliermodulenew.resx">
-      <DependentUpon>suppliermodulenew.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="suppliernew.resx">
-      <DependentUpon>suppliernew.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
