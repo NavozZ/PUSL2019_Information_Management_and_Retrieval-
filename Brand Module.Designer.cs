@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.picClose = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtBrandN = new System.Windows.Forms.TextBox();
             this.btnsubmit = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
+            this.lblid = new System.Windows.Forms.Label();
+            this.picClose = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             this.SuspendLayout();
@@ -50,18 +51,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(658, 63);
             this.panel1.TabIndex = 0;
-            // 
-            // picClose
-            // 
-            this.picClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picClose.Image = global::PUSL2019_Information_Management_and_Retrieval_.Properties.Resources.icons8_close_window_30;
-            this.picClose.Location = new System.Drawing.Point(612, 12);
-            this.picClose.Name = "picClose";
-            this.picClose.Size = new System.Drawing.Size(30, 30);
-            this.picClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picClose.TabIndex = 1;
-            this.picClose.TabStop = false;
-            this.picClose.Click += new System.EventHandler(this.picClose_Click);
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -77,8 +67,9 @@
             // 
             this.TxtBrandN.Location = new System.Drawing.Point(122, 101);
             this.TxtBrandN.Name = "TxtBrandN";
-            this.TxtBrandN.Size = new System.Drawing.Size(403, 20);
+            this.TxtBrandN.Size = new System.Drawing.Size(472, 20);
             this.TxtBrandN.TabIndex = 1;
+            this.TxtBrandN.TextChanged += new System.EventHandler(this.TxtBrandN_TextChanged);
             // 
             // btnsubmit
             // 
@@ -127,12 +118,36 @@
             this.btnUpdate.TabIndex = 4;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // lblid
+            // 
+            this.lblid.AutoSize = true;
+            this.lblid.Location = new System.Drawing.Point(25, 167);
+            this.lblid.Name = "lblid";
+            this.lblid.Size = new System.Drawing.Size(16, 13);
+            this.lblid.TabIndex = 5;
+            this.lblid.Text = "Id";
+            this.lblid.Visible = false;
+            // 
+            // picClose
+            // 
+            this.picClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picClose.Image = global::PUSL2019_Information_Management_and_Retrieval_.Properties.Resources.icons8_close_window_30;
+            this.picClose.Location = new System.Drawing.Point(612, 12);
+            this.picClose.Name = "picClose";
+            this.picClose.Size = new System.Drawing.Size(30, 30);
+            this.picClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picClose.TabIndex = 1;
+            this.picClose.TabStop = false;
+            this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
             // Brand_Module
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(658, 211);
+            this.Controls.Add(this.lblid);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.label2);
@@ -142,6 +157,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Brand_Module";
             this.Text = "Brand_Module";
+            this.Load += new System.EventHandler(this.Brand_Module_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
@@ -155,10 +171,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox picClose;
-        private System.Windows.Forms.TextBox TxtBrandN;
-        private System.Windows.Forms.Button btnsubmit;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnUpdate;
+        public System.Windows.Forms.TextBox TxtBrandN;
+        public System.Windows.Forms.Button btnsubmit;
+        public System.Windows.Forms.Button btnCancel;
+        public System.Windows.Forms.Button btnUpdate;
+        public System.Windows.Forms.Label lblid;
     }
 }

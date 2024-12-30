@@ -16,11 +16,13 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
         DBConnect dbcon = new DBConnect();
+        Brand brand;
 
-        public Brand_Module()
+        public Brand_Module(Brand br)
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
+            this.brand = br;
         }
 
         private void btnsubmit_Click(object sender, EventArgs e)
@@ -36,6 +38,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
                     cn.Close();
                     MessageBox.Show("Record has been successful saved.", "POS");
                     Clear();
+                    brand.LoardBrand();
                 }
             }
             catch (Exception ex) 
@@ -57,6 +60,39 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         public void Clear()
         { 
             TxtBrandN.Clear();
+            btnUpdate.Enabled = false;
+            btnsubmit.Enabled = true;
+            TxtBrandN.Focus();
+
+        }
+
+        private void Brand_Module_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtBrandN_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure want to update this brand?", "Updtae Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                cn.Open();
+                cm = new SqlCommand("UPDATE tbBrand SET brand = @brand WHERE id LIKE '" + lblid.Text + "'",cn);
+                cm.ExecuteNonQuery();
+                cn.Close() ;
+                MessageBox.Show("Brand has been successfully updated.", "POS");
+                Clear() ;
+                this.Dispose() ;
+            }
         }
     }
 }

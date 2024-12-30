@@ -30,7 +30,7 @@
         {
             this.PanelMain = new System.Windows.Forms.Panel();
             this.PanelTitle = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbltitle = new System.Windows.Forms.Label();
             this.SidePanel = new System.Windows.Forms.Panel();
             this.btnlogout = new System.Windows.Forms.Button();
             this.PanelSubSettings = new System.Windows.Forms.Panel();
@@ -79,24 +79,24 @@
             // 
             // PanelTitle
             // 
-            this.PanelTitle.Controls.Add(this.label3);
+            this.PanelTitle.Controls.Add(this.lbltitle);
             this.PanelTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelTitle.Location = new System.Drawing.Point(230, 0);
             this.PanelTitle.Name = "PanelTitle";
             this.PanelTitle.Size = new System.Drawing.Size(760, 40);
             this.PanelTitle.TabIndex = 4;
             // 
-            // label3
+            // lbltitle
             // 
-            this.label3.AutoSize = true;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Font = new System.Drawing.Font("Modern No. 20", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.label3.Location = new System.Drawing.Point(354, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 22);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "TitleName";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbltitle.AutoSize = true;
+            this.lbltitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbltitle.Font = new System.Drawing.Font("Modern No. 20", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.lbltitle.Location = new System.Drawing.Point(354, 9);
+            this.lbltitle.Name = "lbltitle";
+            this.lbltitle.Size = new System.Drawing.Size(103, 22);
+            this.lbltitle.TabIndex = 3;
+            this.lbltitle.Text = "TitleName";
+            this.lbltitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SidePanel
             // 
@@ -484,7 +484,7 @@
 
         private System.Windows.Forms.Panel PanelMain;
         private System.Windows.Forms.Panel PanelTitle;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbltitle;
         private System.Windows.Forms.Panel SidePanel;
         private System.Windows.Forms.Button btnlogout;
         private System.Windows.Forms.Panel PanelSubSettings;

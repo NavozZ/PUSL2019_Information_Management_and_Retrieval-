@@ -148,6 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\icons8-product-30.png" />
+    <None Include="Resources\icons8-delete-20.png" />
+    <None Include="Resources\icons8-edit-20.png" />
     <None Include="Resources\icons8-close-window-40.png" />
     <None Include="Resources\icons8-close-window.gif" />
     <None Include="Resources\icons8-close-window-30.png" />

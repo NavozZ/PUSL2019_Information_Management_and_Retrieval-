@@ -27,6 +27,21 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             
             
         }
+        private Form activeform = null;
+        public void openChildForm(Form childForm)
+        {
+            if(activeform != null)
+                activeform.Close();
+            activeform = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            lbltitle.Text = childForm.Text;
+            PanelMain.Controls.Add(childForm);
+            PanelMain.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
 
         private void customizedesing()
         {
@@ -85,6 +100,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
         private void btnBrand_Click(object sender, EventArgs e)
         {
+            openChildForm(new Brand());
             hideSubmenu();
         }
 
