@@ -465,7 +465,7 @@
             this.Controls.Add(this.PanelTitle);
             this.Controls.Add(this.SidePanel);
             this.Name = "Main";
-            this.Text = "New Era Super Market";
+            this.Text = "SuperMarket POS";
             this.PanelTitle.ResumeLayout(false);
             this.PanelTitle.PerformLayout();
             this.SidePanel.ResumeLayout(false);
