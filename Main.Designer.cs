@@ -73,7 +73,7 @@
             this.PanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelMain.Location = new System.Drawing.Point(230, 40);
             this.PanelMain.Name = "PanelMain";
-            this.PanelMain.Size = new System.Drawing.Size(760, 504);
+            this.PanelMain.Size = new System.Drawing.Size(954, 521);
             this.PanelMain.TabIndex = 5;
             this.PanelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -83,7 +83,7 @@
             this.PanelTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelTitle.Location = new System.Drawing.Point(230, 0);
             this.PanelTitle.Name = "PanelTitle";
-            this.PanelTitle.Size = new System.Drawing.Size(760, 40);
+            this.PanelTitle.Size = new System.Drawing.Size(954, 40);
             this.PanelTitle.TabIndex = 4;
             // 
             // lbltitle
@@ -117,7 +117,7 @@
             this.SidePanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.SidePanel.Location = new System.Drawing.Point(0, 0);
             this.SidePanel.Name = "SidePanel";
-            this.SidePanel.Size = new System.Drawing.Size(230, 544);
+            this.SidePanel.Size = new System.Drawing.Size(230, 561);
             this.SidePanel.TabIndex = 3;
             // 
             // btnlogout
@@ -460,7 +460,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGreen;
-            this.ClientSize = new System.Drawing.Size(990, 544);
+            this.ClientSize = new System.Drawing.Size(1184, 561);
             this.Controls.Add(this.PanelMain);
             this.Controls.Add(this.PanelTitle);
             this.Controls.Add(this.SidePanel);

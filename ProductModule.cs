@@ -44,6 +44,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             cboBrand.Items.Clear();
             cboBrand.DataSource = dbcon.getTable("SELECT * FROM tbBrand");
             cboBrand.DisplayMember = "Brand";
+            cboBrand.ValueMember = "id";
 
         }
 
