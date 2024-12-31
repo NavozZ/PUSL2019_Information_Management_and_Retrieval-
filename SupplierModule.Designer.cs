@@ -28,45 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbltopic = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.labelName = new System.Windows.Forms.Label();
+            this.labelAddress = new System.Windows.Forms.Label();
+            this.labelCP = new System.Windows.Forms.Label();
+            this.labelPN = new System.Windows.Forms.Label();
+            this.labeleEmail = new System.Windows.Forms.Label();
+            this.labelFNo = new System.Windows.Forms.Label();
             this.txtSupplierName = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtContactPerson = new System.Windows.Forms.TextBox();
             this.txtPhoneNo = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtFaxNo = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
+            this.btnsave = new System.Windows.Forms.Button();
+            this.btnupdate = new System.Windows.Forms.Button();
+            this.btncancel = new System.Windows.Forms.Button();
+            this.lblid = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lbltopic
             // 
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(13, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Supplier Module";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbltopic.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltopic.ForeColor = System.Drawing.Color.White;
+            this.lbltopic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbltopic.Location = new System.Drawing.Point(13, 20);
+            this.lbltopic.Name = "lbltopic";
+            this.lbltopic.Size = new System.Drawing.Size(171, 24);
+            this.lbltopic.TabIndex = 0;
+            this.lbltopic.Text = "Supplier Module";
+            this.lbltopic.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lbltopic);
             this.panel1.Location = new System.Drawing.Point(-1, -2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(977, 54);
@@ -76,7 +76,6 @@
             // 
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label2.Location = new System.Drawing.Point(909, 11);
             this.label2.Name = "label2";
@@ -85,171 +84,171 @@
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // labelName
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(54, 82);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 21);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Supplier Name :";
+            this.labelName.AutoSize = true;
+            this.labelName.Location = new System.Drawing.Point(54, 82);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(122, 20);
+            this.labelName.TabIndex = 2;
+            this.labelName.Text = "Supplier Name :";
             // 
-            // label4
+            // labelAddress
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(54, 130);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 21);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Address :";
+            this.labelAddress.AutoSize = true;
+            this.labelAddress.Location = new System.Drawing.Point(54, 130);
+            this.labelAddress.Name = "labelAddress";
+            this.labelAddress.Size = new System.Drawing.Size(75, 20);
+            this.labelAddress.TabIndex = 3;
+            this.labelAddress.Text = "Address :";
             // 
-            // label5
+            // labelCP
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(54, 184);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(159, 21);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Contact Person :";
+            this.labelCP.AutoSize = true;
+            this.labelCP.Location = new System.Drawing.Point(54, 184);
+            this.labelCP.Name = "labelCP";
+            this.labelCP.Size = new System.Drawing.Size(131, 20);
+            this.labelCP.TabIndex = 4;
+            this.labelCP.Text = "Contact Person :";
             // 
-            // label6
+            // labelPN
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(54, 231);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 21);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Phone No :";
+            this.labelPN.AutoSize = true;
+            this.labelPN.Location = new System.Drawing.Point(54, 231);
+            this.labelPN.Name = "labelPN";
+            this.labelPN.Size = new System.Drawing.Size(89, 20);
+            this.labelPN.TabIndex = 5;
+            this.labelPN.Text = "Phone No :";
             // 
-            // label7
+            // labeleEmail
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(54, 278);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(146, 21);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "E-mail Address :";
+            this.labeleEmail.AutoSize = true;
+            this.labeleEmail.Location = new System.Drawing.Point(54, 278);
+            this.labeleEmail.Name = "labeleEmail";
+            this.labeleEmail.Size = new System.Drawing.Size(121, 20);
+            this.labeleEmail.TabIndex = 6;
+            this.labeleEmail.Text = "E-mail Address :";
             // 
-            // label8
+            // labelFNo
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(551, 231);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 21);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Fax No :";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+            this.labelFNo.AutoSize = true;
+            this.labelFNo.Location = new System.Drawing.Point(551, 231);
+            this.labelFNo.Name = "labelFNo";
+            this.labelFNo.Size = new System.Drawing.Size(66, 20);
+            this.labelFNo.TabIndex = 7;
+            this.labelFNo.Text = "Fax No :";
+            this.labelFNo.Click += new System.EventHandler(this.label8_Click);
             // 
             // txtSupplierName
             // 
             this.txtSupplierName.Location = new System.Drawing.Point(236, 73);
             this.txtSupplierName.Name = "txtSupplierName";
-            this.txtSupplierName.Size = new System.Drawing.Size(687, 30);
+            this.txtSupplierName.Size = new System.Drawing.Size(687, 25);
             this.txtSupplierName.TabIndex = 8;
             // 
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(236, 121);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(687, 30);
+            this.txtAddress.Size = new System.Drawing.Size(687, 25);
             this.txtAddress.TabIndex = 9;
             // 
             // txtContactPerson
             // 
             this.txtContactPerson.Location = new System.Drawing.Point(236, 175);
             this.txtContactPerson.Name = "txtContactPerson";
-            this.txtContactPerson.Size = new System.Drawing.Size(687, 30);
+            this.txtContactPerson.Size = new System.Drawing.Size(687, 25);
             this.txtContactPerson.TabIndex = 10;
             // 
             // txtPhoneNo
             // 
             this.txtPhoneNo.Location = new System.Drawing.Point(236, 222);
             this.txtPhoneNo.Name = "txtPhoneNo";
-            this.txtPhoneNo.Size = new System.Drawing.Size(289, 30);
+            this.txtPhoneNo.Size = new System.Drawing.Size(289, 25);
             this.txtPhoneNo.TabIndex = 11;
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(236, 269);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(687, 30);
+            this.txtEmail.Size = new System.Drawing.Size(687, 25);
             this.txtEmail.TabIndex = 12;
             // 
             // txtFaxNo
             // 
             this.txtFaxNo.Location = new System.Drawing.Point(637, 222);
             this.txtFaxNo.Name = "txtFaxNo";
-            this.txtFaxNo.Size = new System.Drawing.Size(286, 30);
+            this.txtFaxNo.Size = new System.Drawing.Size(286, 25);
             this.txtFaxNo.TabIndex = 13;
             // 
-            // button1
+            // btnsave
             // 
-            this.button1.BackColor = System.Drawing.Color.Blue;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(650, 350);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 36);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnsave.BackColor = System.Drawing.Color.Blue;
+            this.btnsave.ForeColor = System.Drawing.Color.White;
+            this.btnsave.Location = new System.Drawing.Point(650, 350);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(87, 36);
+            this.btnsave.TabIndex = 14;
+            this.btnsave.Text = "Save";
+            this.btnsave.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnupdate
             // 
-            this.button2.BackColor = System.Drawing.Color.Olive;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(743, 350);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 36);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnupdate.BackColor = System.Drawing.Color.Olive;
+            this.btnupdate.ForeColor = System.Drawing.Color.White;
+            this.btnupdate.Location = new System.Drawing.Point(743, 350);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(87, 36);
+            this.btnupdate.TabIndex = 15;
+            this.btnupdate.Text = "Update";
+            this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btncancel
             // 
-            this.button3.BackColor = System.Drawing.Color.Silver;
-            this.button3.Location = new System.Drawing.Point(836, 350);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(87, 36);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Cancel";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btncancel.BackColor = System.Drawing.Color.Silver;
+            this.btncancel.Location = new System.Drawing.Point(836, 350);
+            this.btncancel.Name = "btncancel";
+            this.btncancel.Size = new System.Drawing.Size(87, 36);
+            this.btncancel.TabIndex = 16;
+            this.btncancel.Text = "Cancel";
+            this.btncancel.UseVisualStyleBackColor = false;
             // 
-            // label9
+            // lblid
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(54, 365);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(25, 21);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "id";
+            this.lblid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblid.AutoSize = true;
+            this.lblid.Location = new System.Drawing.Point(54, 365);
+            this.lblid.Name = "lblid";
+            this.lblid.Size = new System.Drawing.Size(22, 20);
+            this.lblid.TabIndex = 17;
+            this.lblid.Text = "id";
             // 
             // SupplierModule
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(975, 418);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblid);
+            this.Controls.Add(this.btncancel);
+            this.Controls.Add(this.btnupdate);
+            this.Controls.Add(this.btnsave);
             this.Controls.Add(this.txtFaxNo);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtPhoneNo);
             this.Controls.Add(this.txtContactPerson);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtSupplierName);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelFNo);
+            this.Controls.Add(this.labeleEmail);
+            this.Controls.Add(this.labelPN);
+            this.Controls.Add(this.labelCP);
+            this.Controls.Add(this.labelAddress);
+            this.Controls.Add(this.labelName);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SupplierModule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SupplierModule";
@@ -261,24 +260,24 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbltopic;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Label labelAddress;
+        private System.Windows.Forms.Label labelCP;
+        private System.Windows.Forms.Label labelPN;
+        private System.Windows.Forms.Label labeleEmail;
+        private System.Windows.Forms.Label labelFNo;
+        private System.Windows.Forms.Button btnsave;
+        private System.Windows.Forms.Button btnupdate;
+        private System.Windows.Forms.Button btncancel;
         public System.Windows.Forms.TextBox txtSupplierName;
         public System.Windows.Forms.TextBox txtAddress;
         public System.Windows.Forms.TextBox txtContactPerson;
         public System.Windows.Forms.TextBox txtPhoneNo;
         public System.Windows.Forms.TextBox txtEmail;
         public System.Windows.Forms.TextBox txtFaxNo;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblid;
     }
 }
