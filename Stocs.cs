@@ -21,5 +21,15 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         {
 
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
