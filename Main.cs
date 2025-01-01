@@ -124,6 +124,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
         private void btnSupplier_Click(object sender, EventArgs e)
         {
+            openChildForm(new supplier());
             hideSubmenu();
         }
 
