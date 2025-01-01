@@ -150,7 +150,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
         private void btnUser_Click(object sender, EventArgs e)
         {
-            openChildForm(new UserAccount());   
+            openChildForm(new UserAccount());
             hideSubmenu();
         }
 
