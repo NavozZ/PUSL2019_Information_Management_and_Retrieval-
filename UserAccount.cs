@@ -11,12 +11,14 @@ using System.Windows.Forms;
 
 namespace PUSL2019_Information_Management_and_Retrieval_
 {
-    SqlConnection cn = new SqlConnection();
-    SqlCommand cm = new SqlCommand();
-    DBConnect dbcon = new DBConnect();
-    SqlDataReader dr;
     public partial class UserAccount : Form
     {
+        // Declare class members inside the class
+        SqlConnection cn = new SqlConnection();
+        SqlCommand cm = new SqlCommand();
+        DBConnect dbcon = new DBConnect();
+        SqlDataReader dr;
+
         public UserAccount()
         {
             InitializeComponent();
@@ -47,27 +49,27 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         {
             try
             {
-                if(txtPass.Text != txtRePass.Text)
+                if (txtPass.Text != txtRePass.Text)
                 {
-                    MessageBox.Show("Password did not match!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);return;
+                    MessageBox.Show("Password did not match!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
                 cn.Open();
                 cm = new SqlCommand("Insert into tbUser(username, password, role, name) Values (@username, @password, @role, @name)", cn);
-                cm.Parameters.AddwidthValue("@username", txtUsername.Text);
-                cm.Parameters.AddwidthValue("@password", txtPass.Text);
-                cm.Parameters.AddwidthValue("@role", cbRole.Text);
-                cm.Parameters.AddwidthValue("@name", txtName.Text);
-                cn.ExecuteNonQuery();
+                cm.Parameters.AddWithValue("@username", txtUsername.Text); // Corrected method name to AddWithValue
+                cm.Parameters.AddWithValue("@password", txtPass.Text); // Corrected method name to AddWithValue
+                cm.Parameters.AddWithValue("@role", cbRole.Text);
+                cm.Parameters.AddWithValue("@name", txtName.Text);
+                cm.ExecuteNonQuery();
                 cn.Close();
-                MessageBox.Show("New account has been succesfully saved!", "Save Record", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("New account has been successfully saved!", "Save Record", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Clear();
             }
-            catch {Exception ex}
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Warning");
             }
         }
-
 
         private void panel1_Paint_1(object sender, PaintEventArgs e)
         {
