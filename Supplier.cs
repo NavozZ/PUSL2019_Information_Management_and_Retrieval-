@@ -21,6 +21,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
+            Loadsupplier();
         }
 
         public void Loadsupplier()
@@ -50,11 +51,8 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             string colName = dgvSupplier.Columns[e.ColumnIndex].Name;
             if (colName == "Edit")
             {
-                // Create an instance of SupplierModule
                 SupplierModule supplierModule = new SupplierModule(this);
-
-                // Set values for the SupplierModule fields using the instance
-                supplierModule.lblId.Text = dgvSupplier.Rows[e.RowIndex].Cells[1].Value.ToString();
+                supplierModule.lblid.Text = dgvSupplier.Rows[e.RowIndex].Cells[1].Value.ToString();
                 supplierModule.txtSupplier.Text = dgvSupplier.Rows[e.RowIndex].Cells[2].Value.ToString();
                 supplierModule.txtAddress.Text = dgvSupplier.Rows[e.RowIndex].Cells[3].Value.ToString();
                 supplierModule.txtConPerson.Text = dgvSupplier.Rows[e.RowIndex].Cells[4].Value.ToString();
@@ -62,25 +60,22 @@ namespace PUSL2019_Information_Management_and_Retrieval_
                 supplierModule.txtEmail.Text = dgvSupplier.Rows[e.RowIndex].Cells[6].Value.ToString();
                 supplierModule.txtFaxNo.Text = dgvSupplier.Rows[e.RowIndex].Cells[7].Value.ToString();
 
-                // Enable or disable buttons as required
                 supplierModule.btnSave.Enabled = false;
-                supplierModule.btnUpdate.Enabled = true;
-
-                // Show the dialog
+                supplierModule.btnCancel.Enabled =true;
                 supplierModule.ShowDialog();
             }
-            else if (colName == "Delete")
+            else if(colName=="Delete")
             {
-                if (MessageBox.Show("Are you sure you want to delete this supplier?", "Delete Supplier", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Are you sure want to delete this record?", "CONFIRM", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
-                    cm = new SqlCommand("Delete from tbSupplier where id like'" + dgvSupplier.Rows[e.RowIndex].Cells[1].Value.ToString() + "'",cn);
+                    cm = new SqlCommand("Delete from tbSupplier where id like '" + dgvSupplier.Rows[e.RowIndex].Cells[1].Value.ToString() + "'", cn);
                     cm.ExecuteNonQuery();
                     cn.Close();
-                    // Perform delete logic here
-                    MessageBox.Show("Supplier deleted successfully!");
+                    MessageBox.Show("Record has been successfully deleted.", "Delete Record", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
+            Loadsupplier();
         }
     }
 }

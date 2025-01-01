@@ -45,8 +45,8 @@
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtFaxNo = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.lblId = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.lblid = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             this.SuspendLayout();
@@ -54,12 +54,13 @@
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.OliveDrab;
+            this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(586, 376);
+            this.btnUpdate.Location = new System.Drawing.Point(625, 314);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(91, 33);
+            this.btnUpdate.Size = new System.Drawing.Size(81, 33);
             this.btnUpdate.TabIndex = 24;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -67,15 +68,15 @@
             // 
             // btnSave
             // 
-            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.BackColor = System.Drawing.Color.LightGreen;
+            this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(501, 376);
+            this.btnSave.Location = new System.Drawing.Point(549, 314);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(1);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(78, 33);
+            this.btnSave.Size = new System.Drawing.Size(72, 33);
             this.btnSave.TabIndex = 22;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -95,7 +96,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 19);
+            this.label1.Location = new System.Drawing.Point(23, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 18);
             this.label1.TabIndex = 0;
@@ -109,7 +110,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(885, 50);
+            this.panel1.Size = new System.Drawing.Size(882, 50);
             this.panel1.TabIndex = 19;
             // 
             // picClose
@@ -211,36 +212,37 @@
             this.txtEmail.Size = new System.Drawing.Size(672, 20);
             this.txtEmail.TabIndex = 27;
             // 
-            // lblId
-            // 
-            this.lblId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(39, 387);
-            this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(15, 13);
-            this.lblId.TabIndex = 28;
-            this.lblId.Text = "id";
-            // 
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.Color.Crimson;
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Location = new System.Drawing.Point(694, 376);
+            this.btnCancel.Location = new System.Drawing.Point(712, 314);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(81, 32);
             this.btnCancel.TabIndex = 29;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
-            
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
+            // 
+            // lblid
+            // 
+            this.lblid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblid.AutoSize = true;
+            this.lblid.Location = new System.Drawing.Point(23, 325);
+            this.lblid.Name = "lblid";
+            this.lblid.Size = new System.Drawing.Size(16, 13);
+            this.lblid.TabIndex = 30;
+            this.lblid.Text = "Id";
+            this.lblid.Visible = false;
             // 
             // SupplierModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(885, 464);
+            this.ClientSize = new System.Drawing.Size(882, 400);
+            this.Controls.Add(this.lblid);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.lblId);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtFaxNo);
             this.Controls.Add(this.txtPhone);
@@ -285,7 +287,7 @@
         public System.Windows.Forms.TextBox txtFaxNo;
         public System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.PictureBox picClose;
-        public System.Windows.Forms.Label lblId;
         public System.Windows.Forms.Button btnCancel;
+        public System.Windows.Forms.Label lblid;
     }
 }

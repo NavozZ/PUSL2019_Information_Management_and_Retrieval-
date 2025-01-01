@@ -17,15 +17,15 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         SqlCommand cm = new SqlCommand();
         DBConnect dbcon = new DBConnect();
         string stitle = "SuperMarket POS";
-        supplier supplier;
+        supplier Supplier;
         public SupplierModule(supplier sp)
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
-            supplier = sp;
+            Supplier = sp;
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void btnCancel_Click_1(object sender, EventArgs e)
         {
             Clear();
         }
@@ -56,7 +56,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
                 if (MessageBox.Show("save this record? click yes to cinfirm.", "CONFIRM", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
-                    cm = new SqlCommand("Insert into tbSupplier (supplier,address,contactperson,phone,email,fax) values(@supplier,@adress,@contactperson,@phone,@email,@fax)",cn);
+                    cm = new SqlCommand("Insert into tbSupplier (supplier,address,contactperson,phone,email,fax) values (@supplier,@adress,@contactperson,@phone,@email,@fax)",cn);
                     cm.Parameters.AddWithValue("@supplier",txtSupplier.Text);
                     cm.Parameters.AddWithValue("@adress", txtAddress.Text);
                     cm.Parameters.AddWithValue("@contactperson", txtConPerson.Text);
@@ -67,7 +67,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
                     cn.Close();
                     MessageBox.Show("Record has been successfully saved!","Save Record",MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Clear();
-                    supplier.Loadsupplier();
+                    Supplier.Loadsupplier();
 
                 }
             }
@@ -85,8 +85,8 @@ namespace PUSL2019_Information_Management_and_Retrieval_
                 if(MessageBox.Show("Update this Record? click yes to confirm.","CONFIRM",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
-                    cm = new SqlCommand("Update tbSupplier set supplier-@supplier,address-@address, conatctperson-@contactperson,telephone-@telephone,email-@email,fax-@fax where id-@id", cn);
-                    cm.Parameters.AddWithValue("@id", lblId.Text);
+                    cm = new SqlCommand("Update tbSupplier set supplier=@supplier,address=@address, conatctperson=@contactperson,telephone=@telephone,email=@email,fax=@fax where id=@id", cn);
+                    cm.Parameters.AddWithValue("@id", lblid.Text);
                     cm.Parameters.AddWithValue("@supplier", txtSupplier.Text);
                     cm.Parameters.AddWithValue("@adress", txtAddress.Text);
                     cm.Parameters.AddWithValue("@contactperson", txtConPerson.Text);
@@ -98,6 +98,10 @@ namespace PUSL2019_Information_Management_and_Retrieval_
                     MessageBox.Show("Record has been successfully saved!", "Update Record", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Dispose();
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "warning");
             }
         }
 

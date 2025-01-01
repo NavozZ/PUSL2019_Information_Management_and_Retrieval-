@@ -206,18 +206,16 @@
             this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Edit.HeaderText = "";
             this.Edit.Image = global::PUSL2019_Information_Management_and_Retrieval_.Properties.Resources.icons8_edit_20;
-            this.Edit.MinimumWidth = 6;
             this.Edit.Name = "Edit";
-            this.Edit.Width = 6;
+            this.Edit.Width = 5;
             // 
             // Delete
             // 
             this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Delete.HeaderText = "";
             this.Delete.Image = global::PUSL2019_Information_Management_and_Retrieval_.Properties.Resources.icons8_delete_20;
-            this.Delete.MinimumWidth = 6;
             this.Delete.Name = "Delete";
-            this.Delete.Width = 6;
+            this.Delete.Width = 5;
             // 
             // supplier
             // 
