@@ -16,10 +16,5 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         {
             InitializeComponent();
         }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
