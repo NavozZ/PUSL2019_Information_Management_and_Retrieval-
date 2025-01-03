@@ -19,7 +19,23 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
         private void picClose_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            if (MessageBox.Show("Exit Application?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        public void slide(Button button)
+        {
+            PanelSlide.BackColor = Color.White;
+            PanelSlide.Height = button.Height;
+            PanelSlide.Top = button.Top;
+        }
+
+        private void btnNTran_Click_1(object sender, EventArgs e)
+        {
+            slide(btnNTran);
+            GetTranNo();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -47,11 +63,6 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             slide(btnDSales);
         }
 
-        private void slide(Button btnDSales)
-        {
-            throw new NotImplementedException();
-        }
-
         private void btnPass_Click(object sender, EventArgs e)
         {
             slide(btnPass);
@@ -62,9 +73,15 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             slide(btnLogout);
         }
 
-        private void btnNTran_Click(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            slide(btnNTran);
+            lblTimer.Text = DateTime.Now.ToString("hh:mm:ss tt");
+        }
+
+        public void GetTranNo()
+        {
+            string sdate = DateTime.Now.ToString("yyyymmdd");
+            string transno = sdate + "1001";
         }
     }
 }

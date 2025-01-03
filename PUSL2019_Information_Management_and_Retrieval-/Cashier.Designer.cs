@@ -30,23 +30,29 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cashier));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblDisplayTotale = new System.Windows.Forms.Label();
+            this.lblVatable = new System.Windows.Forms.Label();
+            this.lblTax = new System.Windows.Forms.Label();
+            this.lblDiscount = new System.Windows.Forms.Label();
             this.lblTimer = new System.Windows.Forms.Label();
-            this.lablselstotal = new System.Windows.Forms.Label();
+            this.lblSaleTotable = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.texbarcod = new System.Windows.Forms.TextBox();
+            this.texBarcod = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.oooooooooo = new System.Windows.Forms.Label();
+            this.lblTranNo = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblname = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -66,6 +72,19 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             this.btnDiscount = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnNTran = new System.Windows.Forms.Button();
+            this.dgvProduct = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAdd = new System.Windows.Forms.DataGridViewImageColumn();
+            this.colReduce = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
@@ -73,25 +92,26 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             this.SuspendLayout();
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.label1);
-            this.panel5.Controls.Add(this.label13);
-            this.panel5.Controls.Add(this.label12);
-            this.panel5.Controls.Add(this.label11);
+            this.panel5.Controls.Add(this.lblDisplayTotale);
+            this.panel5.Controls.Add(this.lblVatable);
+            this.panel5.Controls.Add(this.lblTax);
+            this.panel5.Controls.Add(this.lblDiscount);
             this.panel5.Controls.Add(this.lblTimer);
-            this.panel5.Controls.Add(this.lablselstotal);
+            this.panel5.Controls.Add(this.lblSaleTotable);
             this.panel5.Controls.Add(this.label10);
             this.panel5.Controls.Add(this.label9);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.texbarcod);
+            this.panel5.Controls.Add(this.texBarcod);
             this.panel5.Controls.Add(this.label6);
-            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.lblDate);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.oooooooooo);
+            this.panel5.Controls.Add(this.lblTranNo);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel5.Location = new System.Drawing.Point(962, 50);
@@ -99,44 +119,44 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             this.panel5.Size = new System.Drawing.Size(220, 603);
             this.panel5.TabIndex = 7;
             // 
-            // label1
+            // lblDisplayTotale
             // 
-            this.label1.BackColor = System.Drawing.Color.LightGreen;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(-3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(220, 39);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "0.00";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblDisplayTotale.BackColor = System.Drawing.Color.LightGreen;
+            this.lblDisplayTotale.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDisplayTotale.ForeColor = System.Drawing.Color.White;
+            this.lblDisplayTotale.Location = new System.Drawing.Point(-3, 0);
+            this.lblDisplayTotale.Name = "lblDisplayTotale";
+            this.lblDisplayTotale.Size = new System.Drawing.Size(220, 25);
+            this.lblDisplayTotale.TabIndex = 16;
+            this.lblDisplayTotale.Text = "0.00";
+            this.lblDisplayTotale.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label13
+            // lblVatable
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(125, 409);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(31, 16);
-            this.label13.TabIndex = 15;
-            this.label13.Text = "0.00";
+            this.lblVatable.Location = new System.Drawing.Point(99, 409);
+            this.lblVatable.Name = "lblVatable";
+            this.lblVatable.Size = new System.Drawing.Size(109, 16);
+            this.lblVatable.TabIndex = 15;
+            this.lblVatable.Text = "0.00";
+            this.lblVatable.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label12
+            // lblTax
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(125, 380);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(31, 16);
-            this.label12.TabIndex = 14;
-            this.label12.Text = "0.00";
+            this.lblTax.Location = new System.Drawing.Point(99, 380);
+            this.lblTax.Name = "lblTax";
+            this.lblTax.Size = new System.Drawing.Size(109, 16);
+            this.lblTax.TabIndex = 14;
+            this.lblTax.Text = "0.00";
+            this.lblTax.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label11
+            // lblDiscount
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(125, 345);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(31, 16);
-            this.label11.TabIndex = 13;
-            this.label11.Text = "0.00";
+            this.lblDiscount.Location = new System.Drawing.Point(99, 345);
+            this.lblDiscount.Name = "lblDiscount";
+            this.lblDiscount.Size = new System.Drawing.Size(109, 16);
+            this.lblDiscount.TabIndex = 13;
+            this.lblDiscount.Text = "0.00";
+            this.lblDiscount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblTimer
             // 
@@ -151,14 +171,14 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             this.lblTimer.Text = "00.00.00";
             this.lblTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lablselstotal
+            // lblSaleTotable
             // 
-            this.lablselstotal.AutoSize = true;
-            this.lablselstotal.Location = new System.Drawing.Point(125, 309);
-            this.lablselstotal.Name = "lablselstotal";
-            this.lablselstotal.Size = new System.Drawing.Size(31, 16);
-            this.lablselstotal.TabIndex = 11;
-            this.lablselstotal.Text = "0.00";
+            this.lblSaleTotable.Location = new System.Drawing.Point(96, 309);
+            this.lblSaleTotable.Name = "lblSaleTotable";
+            this.lblSaleTotable.Size = new System.Drawing.Size(112, 16);
+            this.lblSaleTotable.TabIndex = 11;
+            this.lblSaleTotable.Text = "0.00";
+            this.lblSaleTotable.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label10
             // 
@@ -192,34 +212,35 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(3, 309);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 16);
+            this.label7.Size = new System.Drawing.Size(87, 16);
             this.label7.TabIndex = 7;
-            this.label7.Text = "Sales totale:";
+            this.label7.Text = "Sales Totale:";
             // 
-            // texbarcod
+            // texBarcod
             // 
-            this.texbarcod.Location = new System.Drawing.Point(7, 233);
-            this.texbarcod.Name = "texbarcod";
-            this.texbarcod.Size = new System.Drawing.Size(169, 22);
-            this.texbarcod.TabIndex = 6;
+            this.texBarcod.Location = new System.Drawing.Point(7, 244);
+            this.texBarcod.Name = "texBarcod";
+            this.texBarcod.Size = new System.Drawing.Size(169, 22);
+            this.texBarcod.TabIndex = 6;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(3, 209);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 16);
+            this.label6.Size = new System.Drawing.Size(78, 21);
             this.label6.TabIndex = 5;
-            this.label6.Text = "barcord";
+            this.label6.Text = "Barcord";
             // 
-            // label5
+            // lblDate
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(4, 180);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 16);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "00000000";
+            this.lblDate.AutoSize = true;
+            this.lblDate.Location = new System.Drawing.Point(4, 180);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(63, 16);
+            this.lblDate.TabIndex = 4;
+            this.lblDate.Text = "00000000";
             // 
             // label4
             // 
@@ -231,14 +252,14 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             this.label4.TabIndex = 3;
             this.label4.Text = "Date";
             // 
-            // oooooooooo
+            // lblTranNo
             // 
-            this.oooooooooo.AutoSize = true;
-            this.oooooooooo.Location = new System.Drawing.Point(3, 109);
-            this.oooooooooo.Name = "oooooooooo";
-            this.oooooooooo.Size = new System.Drawing.Size(77, 16);
-            this.oooooooooo.TabIndex = 2;
-            this.oooooooooo.Text = "0000000000";
+            this.lblTranNo.AutoSize = true;
+            this.lblTranNo.Location = new System.Drawing.Point(3, 109);
+            this.lblTranNo.Name = "lblTranNo";
+            this.lblTranNo.Size = new System.Drawing.Size(77, 16);
+            this.lblTranNo.TabIndex = 2;
+            this.lblTranNo.Text = "0000000000";
             // 
             // label3
             // 
@@ -372,6 +393,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             this.btnLogout.Text = "Logout";
             this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnPass
             // 
@@ -389,6 +411,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             this.btnPass.Text = "Change Password";
             this.btnPass.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPass.UseVisualStyleBackColor = false;
+            this.btnPass.Click += new System.EventHandler(this.btnPass_Click);
             // 
             // btnDSales
             // 
@@ -406,6 +429,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             this.btnDSales.Text = "Daily Sales";
             this.btnDSales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDSales.UseVisualStyleBackColor = false;
+            this.btnDSales.Click += new System.EventHandler(this.btnDSales_Click);
             // 
             // btnClear
             // 
@@ -423,6 +447,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             this.btnClear.Text = "Clear Cart";
             this.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSettle
             // 
@@ -440,6 +465,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             this.btnSettle.Text = "Settle Payment";
             this.btnSettle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSettle.UseVisualStyleBackColor = false;
+            this.btnSettle.Click += new System.EventHandler(this.btnSettle_Click);
             // 
             // btnDiscount
             // 
@@ -457,6 +483,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             this.btnDiscount.Text = "Add Discount";
             this.btnDiscount.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDiscount.UseVisualStyleBackColor = false;
+            this.btnDiscount.Click += new System.EventHandler(this.btnDiscount_Click);
             // 
             // btnSearch
             // 
@@ -474,6 +501,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             this.btnSearch.Text = "Search Product";
             this.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnNTran
             // 
@@ -491,12 +519,153 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             this.btnNTran.Text = "New Transaction";
             this.btnNTran.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNTran.UseVisualStyleBackColor = false;
+            this.btnNTran.Click += new System.EventHandler(this.btnNTran_Click_1);
+            // 
+            // dgvProduct
+            // 
+            this.dgvProduct.AllowUserToAddRows = false;
+            this.dgvProduct.BackgroundColor = System.Drawing.Color.White;
+            this.dgvProduct.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.LightGreen;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column9,
+            this.Column2,
+            this.Column4,
+            this.Column7,
+            this.Column5,
+            this.Column6,
+            this.Column8,
+            this.colAdd,
+            this.colReduce,
+            this.Delete});
+            this.dgvProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvProduct.EnableHeadersVisualStyles = false;
+            this.dgvProduct.Location = new System.Drawing.Point(208, 50);
+            this.dgvProduct.Name = "dgvProduct";
+            this.dgvProduct.RowHeadersVisible = false;
+            this.dgvProduct.RowHeadersWidth = 51;
+            this.dgvProduct.RowTemplate.Height = 24;
+            this.dgvProduct.Size = new System.Drawing.Size(754, 603);
+            this.dgvProduct.TabIndex = 8;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column1.HeaderText = "No";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 62;
+            // 
+            // Column9
+            // 
+            this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column9.HeaderText = "Id";
+            this.Column9.MinimumWidth = 6;
+            this.Column9.Name = "Column9";
+            this.Column9.Width = 54;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column2.HeaderText = "Pcode";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 96;
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.HeaderText = "Description";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            // 
+            // Column7
+            // 
+            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle7;
+            this.Column7.HeaderText = "Price";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 80;
+            // 
+            // Column5
+            // 
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle8;
+            this.Column5.HeaderText = "Qty";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 71;
+            // 
+            // Column6
+            // 
+            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle9;
+            this.Column6.HeaderText = "Discount";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 113;
+            // 
+            // Column8
+            // 
+            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle10;
+            this.Column8.HeaderText = "Total";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 79;
+            // 
+            // colAdd
+            // 
+            this.colAdd.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colAdd.HeaderText = "";
+            this.colAdd.Image = ((System.Drawing.Image)(resources.GetObject("colAdd.Image")));
+            this.colAdd.MinimumWidth = 6;
+            this.colAdd.Name = "colAdd";
+            this.colAdd.Width = 6;
+            // 
+            // colReduce
+            // 
+            this.colReduce.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colReduce.HeaderText = "";
+            this.colReduce.Image = ((System.Drawing.Image)(resources.GetObject("colReduce.Image")));
+            this.colReduce.MinimumWidth = 6;
+            this.colReduce.Name = "colReduce";
+            this.colReduce.Width = 6;
+            // 
+            // Delete
+            // 
+            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Delete.HeaderText = "";
+            this.Delete.Image = ((System.Drawing.Image)(resources.GetObject("Delete.Image")));
+            this.Delete.MinimumWidth = 6;
+            this.Delete.Name = "Delete";
+            this.Delete.Width = 6;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Cashier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 653);
+            this.Controls.Add(this.dgvProduct);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -515,6 +684,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -527,21 +697,21 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         #endregion
 
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblDisplayTotale;
+        private System.Windows.Forms.Label lblVatable;
+        private System.Windows.Forms.Label lblTax;
+        private System.Windows.Forms.Label lblDiscount;
         private System.Windows.Forms.Label lblTimer;
-        private System.Windows.Forms.Label lablselstotal;
+        private System.Windows.Forms.Label lblSaleTotable;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox texbarcod;
+        private System.Windows.Forms.TextBox texBarcod;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label oooooooooo;
+        private System.Windows.Forms.Label lblTranNo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox picClose;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -561,5 +731,18 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         private System.Windows.Forms.Button btnNTran;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dgvProduct;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewImageColumn colAdd;
+        private System.Windows.Forms.DataGridViewImageColumn colReduce;
+        private System.Windows.Forms.DataGridViewImageColumn Delete;
+        private System.Windows.Forms.Timer timer1;
     }
 }
