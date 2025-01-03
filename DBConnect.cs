@@ -28,5 +28,17 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             adapter.Fill(table);
             return table;
         }
+
+        public double ExtractData(string sql)
+        {
+            
+            cn = new SqlConnection();
+            cn.ConnectionString = myConnection();
+            cn.Open();
+            cm = new SqlCommand(sql, cn);
+            double data = double.Parse(cm.ExecuteScalar().ToString());
+            cn.Close();
+            return data;
+        } 
     }
 }
