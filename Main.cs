@@ -18,6 +18,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
          SqlCommand cm = new SqlCommand();
          DBConnect dbcon = new DBConnect();
 
+        public string _pass;
         public Main()
         {
             InitializeComponent();
@@ -149,7 +150,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
         private void btnUser_Click(object sender, EventArgs e)
         {
-            openChildForm(new UserAccount());   
+            openChildForm(new UserAccount(this));
             hideSubmenu();
         }
 
