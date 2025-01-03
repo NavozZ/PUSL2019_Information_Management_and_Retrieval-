@@ -36,9 +36,9 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             cn.ConnectionString = myConnection();
             cn.Open();
             cm = new SqlCommand(sql, cn);
-            double date = double.Parse(cm.ExecuteScalar().ToString());
+            double data = double.Parse(cm.ExecuteScalar().ToString());
             cn.Close();
             return data;
-        }
+        } 
     }
 }

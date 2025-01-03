@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserAccount));
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
@@ -79,7 +79,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Location = new System.Drawing.Point(48, 12);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 1;
             this.metroTabControl1.Size = new System.Drawing.Size(902, 440);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.UseSelectable = true;
@@ -102,7 +102,7 @@
             this.metroTabPage1.ForeColor = System.Drawing.Color.White;
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.HorizontalScrollbarSize = 2;
+            this.metroTabPage1.HorizontalScrollbarSize = 1;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage1.Name = "metroTabPage1";
             this.metroTabPage1.Size = new System.Drawing.Size(894, 398);
@@ -110,7 +110,7 @@
             this.metroTabPage1.Text = "Create Account";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.VerticalScrollbarSize = 3;
+            this.metroTabPage1.VerticalScrollbarSize = 2;
             // 
             // btnAccCancel
             // 
@@ -149,21 +149,21 @@
             "Cashier"});
             this.cbRole.Location = new System.Drawing.Point(295, 209);
             this.cbRole.Name = "cbRole";
-            this.cbRole.Size = new System.Drawing.Size(565, 30);
+            this.cbRole.Size = new System.Drawing.Size(565, 28);
             this.cbRole.TabIndex = 4;
             // 
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(295, 266);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(565, 30);
+            this.txtName.Size = new System.Drawing.Size(565, 26);
             this.txtName.TabIndex = 3;
             // 
             // txtRePass
             // 
             this.txtRePass.Location = new System.Drawing.Point(295, 152);
             this.txtRePass.Name = "txtRePass";
-            this.txtRePass.Size = new System.Drawing.Size(565, 30);
+            this.txtRePass.Size = new System.Drawing.Size(565, 26);
             this.txtRePass.TabIndex = 3;
             this.txtRePass.UseSystemPasswordChar = true;
             // 
@@ -171,7 +171,7 @@
             // 
             this.txtPass.Location = new System.Drawing.Point(295, 95);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(565, 30);
+            this.txtPass.Size = new System.Drawing.Size(565, 26);
             this.txtPass.TabIndex = 3;
             this.txtPass.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -179,7 +179,7 @@
             // 
             this.txtUsername.Location = new System.Drawing.Point(295, 38);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(565, 30);
+            this.txtUsername.Size = new System.Drawing.Size(565, 26);
             this.txtUsername.TabIndex = 3;
             // 
             // label6
@@ -188,7 +188,7 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(102, 266);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 22);
+            this.label6.Size = new System.Drawing.Size(87, 20);
             this.label6.TabIndex = 2;
             this.label6.Text = "Full Name :";
             this.label6.Click += new System.EventHandler(this.label5_Click);
@@ -199,7 +199,7 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(102, 209);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 22);
+            this.label5.Size = new System.Drawing.Size(49, 20);
             this.label5.TabIndex = 2;
             this.label5.Text = "Role :";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -210,7 +210,7 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(102, 152);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(183, 22);
+            this.label4.Size = new System.Drawing.Size(148, 20);
             this.label4.TabIndex = 2;
             this.label4.Text = "Re-type Password :";
             // 
@@ -220,7 +220,7 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(102, 95);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 22);
+            this.label3.Size = new System.Drawing.Size(87, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Password :";
             // 
@@ -230,7 +230,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(102, 46);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 22);
+            this.label2.Size = new System.Drawing.Size(91, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Username :";
             // 
@@ -249,7 +249,7 @@
             this.metroTabPage2.Controls.Add(this.label7);
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 2;
+            this.metroTabPage2.HorizontalScrollbarSize = 1;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage2.Name = "metroTabPage2";
             this.metroTabPage2.Size = new System.Drawing.Size(894, 398);
@@ -257,7 +257,7 @@
             this.metroTabPage2.Text = "Change Password";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 3;
+            this.metroTabPage2.VerticalScrollbarSize = 2;
             // 
             // btnPassCancel
             // 
@@ -286,12 +286,13 @@
             this.btnPassSave.TabIndex = 7;
             this.btnPassSave.Text = "Save";
             this.btnPassSave.UseVisualStyleBackColor = false;
+            this.btnPassSave.Click += new System.EventHandler(this.btnPassSave_Click);
             // 
             // txtRePass2
             // 
             this.txtRePass2.Location = new System.Drawing.Point(295, 258);
             this.txtRePass2.Name = "txtRePass2";
-            this.txtRePass2.Size = new System.Drawing.Size(565, 30);
+            this.txtRePass2.Size = new System.Drawing.Size(565, 26);
             this.txtRePass2.TabIndex = 5;
             // 
             // label10
@@ -300,7 +301,7 @@
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(102, 266);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(188, 22);
+            this.label10.Size = new System.Drawing.Size(152, 20);
             this.label10.TabIndex = 4;
             this.label10.Text = "Re-type  Password :";
             // 
@@ -308,7 +309,7 @@
             // 
             this.txtNPass.Location = new System.Drawing.Point(295, 183);
             this.txtNPass.Name = "txtNPass";
-            this.txtNPass.Size = new System.Drawing.Size(565, 30);
+            this.txtNPass.Size = new System.Drawing.Size(565, 26);
             this.txtNPass.TabIndex = 5;
             // 
             // label9
@@ -317,7 +318,7 @@
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(102, 191);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(152, 22);
+            this.label9.Size = new System.Drawing.Size(126, 20);
             this.label9.TabIndex = 4;
             this.label9.Text = "New Password :";
             // 
@@ -325,7 +326,7 @@
             // 
             this.txtPass2.Location = new System.Drawing.Point(295, 107);
             this.txtPass2.Name = "txtPass2";
-            this.txtPass2.Size = new System.Drawing.Size(565, 30);
+            this.txtPass2.Size = new System.Drawing.Size(565, 26);
             this.txtPass2.TabIndex = 5;
             // 
             // label8
@@ -334,7 +335,7 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(102, 115);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(180, 22);
+            this.label8.Size = new System.Drawing.Size(146, 20);
             this.label8.TabIndex = 4;
             this.label8.Text = "Current Password :";
             // 
@@ -342,7 +343,7 @@
             // 
             this.txtPassUsername.Location = new System.Drawing.Point(295, 37);
             this.txtPassUsername.Name = "txtPassUsername";
-            this.txtPassUsername.Size = new System.Drawing.Size(565, 30);
+            this.txtPassUsername.Size = new System.Drawing.Size(565, 26);
             this.txtPassUsername.TabIndex = 5;
             // 
             // label7
@@ -351,7 +352,7 @@
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(102, 45);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(111, 22);
+            this.label7.Size = new System.Drawing.Size(91, 20);
             this.label7.TabIndex = 4;
             this.label7.Text = "Username :";
             // 
@@ -360,7 +361,7 @@
             this.metroTabPage3.Controls.Add(this.dgvUser);
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
             this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.HorizontalScrollbarSize = 2;
+            this.metroTabPage3.HorizontalScrollbarSize = 1;
             this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage3.Name = "metroTabPage3";
             this.metroTabPage3.Size = new System.Drawing.Size(894, 398);
@@ -368,21 +369,21 @@
             this.metroTabPage3.Text = "Activate/UnaActivate Account";
             this.metroTabPage3.VerticalScrollbarBarColor = true;
             this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.VerticalScrollbarSize = 3;
+            this.metroTabPage3.VerticalScrollbarSize = 2;
             // 
             // dgvUser
             // 
             this.dgvUser.AllowUserToAddRows = false;
             this.dgvUser.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvUser.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.LightGreen;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LimeGreen;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightGreen;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LimeGreen;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvUser.ColumnHeadersHeight = 30;
             this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -407,7 +408,7 @@
             this.Column1.HeaderText = "No";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 63;
+            this.Column1.Width = 53;
             // 
             // Column2
             // 
@@ -416,7 +417,7 @@
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.Visible = false;
-            this.Column2.Width = 57;
+            this.Column2.Width = 49;
             // 
             // Column3
             // 
@@ -471,7 +472,7 @@
             // 
             // UserAccount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(982, 553);

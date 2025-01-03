@@ -13,7 +13,6 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 {
     public partial class UserAccount : Form
     {
-        // Declare class members inside the class
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
         DBConnect dbcon = new DBConnect();
@@ -87,6 +86,11 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         }
 
         private void UserAccount_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPassSave_Click(object sender, EventArgs e)
         {
 
         }
