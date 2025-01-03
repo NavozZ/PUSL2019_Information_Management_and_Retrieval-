@@ -74,7 +74,7 @@
             this.PanelMain.Location = new System.Drawing.Point(307, 49);
             this.PanelMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PanelMain.Name = "PanelMain";
-            this.PanelMain.Size = new System.Drawing.Size(1013, 621);
+            this.PanelMain.Size = new System.Drawing.Size(954, 521);
             this.PanelMain.TabIndex = 5;
             this.PanelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -85,7 +85,7 @@
             this.PanelTitle.Location = new System.Drawing.Point(307, 0);
             this.PanelTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PanelTitle.Name = "PanelTitle";
-            this.PanelTitle.Size = new System.Drawing.Size(1013, 49);
+            this.PanelTitle.Size = new System.Drawing.Size(954, 40);
             this.PanelTitle.TabIndex = 4;
             // 
             // lbltitle
@@ -121,7 +121,7 @@
             this.SidePanel.Location = new System.Drawing.Point(0, 0);
             this.SidePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SidePanel.Name = "SidePanel";
-            this.SidePanel.Size = new System.Drawing.Size(307, 670);
+            this.SidePanel.Size = new System.Drawing.Size(230, 561);
             this.SidePanel.TabIndex = 3;
             // 
             // btnlogout
@@ -487,7 +487,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGreen;
-            this.ClientSize = new System.Drawing.Size(1320, 670);
+            this.ClientSize = new System.Drawing.Size(1184, 561);
             this.Controls.Add(this.PanelMain);
             this.Controls.Add(this.PanelTitle);
             this.Controls.Add(this.SidePanel);

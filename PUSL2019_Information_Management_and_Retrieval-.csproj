@@ -201,6 +201,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\icons8-supplier-30.png" />
     <None Include="Resources\icons8-category-30.png" />
     <None Include="Resources\icons8-product-30.png" />
     <None Include="Resources\icons8-delete-20.png" />
