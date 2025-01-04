@@ -72,9 +72,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.picClose.Image = ((System.Drawing.Image)(resources.GetObject("picClose.Image")));
-            this.picClose.Location = new System.Drawing.Point(846, 19);
+            this.picClose.Location = new System.Drawing.Point(830, 19);
             this.picClose.Name = "picClose";
-            this.picClose.Size = new System.Drawing.Size(33, 19);
+            this.picClose.Size = new System.Drawing.Size(40, 28);
             this.picClose.TabIndex = 1;
             this.picClose.TabStop = false;
             this.picClose.Click += new System.EventHandler(this.pictureBox1_Click);
