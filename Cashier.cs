@@ -47,10 +47,15 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            slide(btnSearch);
-            LookUpProduct lookUp = new LookUpProduct(this);
-            lookUp.LoadProduct();
-            lookUp.ShowDialog();
+            try
+            {
+                LookUpProduct lookUp = new LookUpProduct(this);
+                lookUp.LoadProduct();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnDiscount_Click(object sender, EventArgs e)
