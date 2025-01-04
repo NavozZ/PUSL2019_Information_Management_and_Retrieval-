@@ -83,5 +83,10 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             string sdate = DateTime.Now.ToString("yyyymmdd");
             string transno = sdate + "1001";
         }
+
+        private void dgvProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
