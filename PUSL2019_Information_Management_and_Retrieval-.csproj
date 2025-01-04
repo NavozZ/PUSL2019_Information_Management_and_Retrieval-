@@ -69,6 +69,12 @@
     </Compile>
     <Compile Include="DBConnection.cs" />
     <Compile Include="DBConnect.cs" />
+    <Compile Include="LookUpProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LookUpProduct.Designer.cs">
+      <DependentUpon>LookUpProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,12 @@
     <EmbeddedResource Include="Brand Module.resx">
       <DependentUpon>Brand Module.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="Qty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Qty.Designer.cs">
+      <DependentUpon>Qty.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +118,9 @@
     </Compile>
     <EmbeddedResource Include="Brand.resx">
       <DependentUpon>Brand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LookUpProduct.resx">
+      <DependentUpon>LookUpProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -121,14 +136,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="Qty.resx">
+      <DependentUpon>Qty.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserAccount.resx">
       <DependentUpon>UserAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +160,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\images %281%29.png" />
     <None Include="Resources\icons8-product-30.png" />
     <None Include="Resources\icons8-delete-20.png" />
     <None Include="Resources\icons8-edit-20.png" />
