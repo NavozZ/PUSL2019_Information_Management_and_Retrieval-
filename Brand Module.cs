@@ -38,7 +38,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
                     cn.Close();
                     MessageBox.Show("Record has been successful saved.", "POS");
                     Clear();
-                    brand.LoardBrand();
+                    brand.LoadBrand();
                 }
             }
             catch (Exception ex) 
@@ -87,6 +87,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             {
                 cn.Open();
                 cm = new SqlCommand("UPDATE tbBrand SET brand = @brand WHERE id LIKE '" + lblid.Text + "'",cn);
+                cm.Parameters.AddWithValue ("@brand",TxtBrandN.Text);
                 cm.ExecuteNonQuery();
                 cn.Close() ;
                 MessageBox.Show("Brand has been successfully updated.", "POS");

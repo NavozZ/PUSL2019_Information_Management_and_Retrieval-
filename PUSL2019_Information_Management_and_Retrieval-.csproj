@@ -67,7 +67,24 @@
     <Compile Include="Brand.Designer.cs">
       <DependentUpon>Brand.cs</DependentUpon>
     </Compile>
-    <Compile Include="DBConnection.cs" />
+    <Compile Include="Cashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashier.Designer.cs">
+      <DependentUpon>Cashier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category.Designer.cs">
+      <DependentUpon>Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryModule.Designer.cs">
+      <DependentUpon>CategoryModule.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBConnect.cs" />
     <Compile Include="LookUpProduct.cs">
       <SubType>Form</SubType>
@@ -104,11 +121,17 @@
     <EmbeddedResource Include="Brand Module.resx">
       <DependentUpon>Brand Module.cs</DependentUpon>
     </EmbeddedResource>
-    <Compile Include="Qty.cs">
+    <Compile Include="Supplier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Qty.Designer.cs">
-      <DependentUpon>Qty.cs</DependentUpon>
+    <Compile Include="Supplier.Designer.cs">
+      <DependentUpon>Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierModule.Designer.cs">
+      <DependentUpon>SupplierModule.cs</DependentUpon>
     </Compile>
     <Compile Include="UserAccount.cs">
       <SubType>Form</SubType>
@@ -119,8 +142,14 @@
     <EmbeddedResource Include="Brand.resx">
       <DependentUpon>Brand.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LookUpProduct.resx">
-      <DependentUpon>LookUpProduct.cs</DependentUpon>
+    <EmbeddedResource Include="Cashier.resx">
+      <DependentUpon>Cashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category.resx">
+      <DependentUpon>Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryModule.resx">
+      <DependentUpon>CategoryModule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -138,8 +167,16 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Qty.resx">
-      <DependentUpon>Qty.cs</DependentUpon>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Supplier.resx">
+      <DependentUpon>Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierModule.resx">
+      <DependentUpon>SupplierModule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserAccount.resx">
       <DependentUpon>UserAccount.cs</DependentUpon>
@@ -160,7 +197,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
-    <None Include="Resources\images %281%29.png" />
+    <None Include="Resources\icons8-supplier-30.png" />
+    <None Include="Resources\icons8-category-30.png" />
     <None Include="Resources\icons8-product-30.png" />
     <None Include="Resources\icons8-delete-20.png" />
     <None Include="Resources\icons8-edit-20.png" />
