@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/.vs/PUSL2019_Information_Management_and_Retrieval-/v17/.suo
+/obj/Debug/PUSL2019_Information_Management_and_Retrieval-.csproj.AssemblyReference.cache
+/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
