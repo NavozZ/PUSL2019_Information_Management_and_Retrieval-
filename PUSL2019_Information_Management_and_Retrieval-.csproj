@@ -130,6 +130,12 @@
     <EmbeddedResource Include="Brand Module.resx">
       <DependentUpon>Brand Module.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="Record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Record.Designer.cs">
+      <DependentUpon>Record.cs</DependentUpon>
+    </Compile>
     <Compile Include="Supplier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +203,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Record.resx">
+      <DependentUpon>Record.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Supplier.resx">
       <DependentUpon>Supplier.cs</DependentUpon>
     </EmbeddedResource>
