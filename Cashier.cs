@@ -17,7 +17,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             InitializeComponent();
         }
 
-        private void picClose_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Exit Application?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
@@ -27,15 +27,15 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
         public void slide(Button button)
         {
-            PanelSlide.BackColor = Color.White;
-            PanelSlide.Height = button.Height;
-            PanelSlide.Top = button.Top;
+            panelSlide.BackColor = Color.White;
+            panelSlide.Height = button.Height;
+            panelSlide.Top = button.Top;    
         }
 
-        private void btnNTran_Click_1(object sender, EventArgs e)
+        private void btnNTran_Click(object sender, EventArgs e)
         {
             slide(btnNTran);
-            GetTranNo();
+            GetTrainNo();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -78,145 +78,16 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             lblTimer.Text = DateTime.Now.ToString("hh:mm:ss tt");
         }
 
-        public void GetTranNo()
+        public void GetTrainNo()
         {
-            string sdate = DateTime.Now.ToString("yyyymmdd");
+            string sdate = DateTime.Now.ToString("yyyyMMdd");
             string transno = sdate + "1001";
+            lblTranNo.Text = transno;
         }
 
-        private void dgvProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-        }
+       
 
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
-
-        private void lblDisplayTotale_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblVatable_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblTax_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblDiscount_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblTimer_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSaleTotable_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void texBarcod_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblDate_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblTranNo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblname_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblUsername_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PanelSlide_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
