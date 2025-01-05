@@ -54,8 +54,8 @@
             this.btnProduct = new System.Windows.Forms.Button();
             this.btndashboard = new System.Windows.Forms.Button();
             this.panellogo = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblAdmin = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelTitle.SuspendLayout();
             this.SidePanel.SuspendLayout();
@@ -432,8 +432,8 @@
             // 
             // panellogo
             // 
-            this.panellogo.Controls.Add(this.label2);
-            this.panellogo.Controls.Add(this.label1);
+            this.panellogo.Controls.Add(this.lblUsername);
+            this.panellogo.Controls.Add(this.lblAdmin);
             this.panellogo.Controls.Add(this.pictureBox1);
             this.panellogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panellogo.Location = new System.Drawing.Point(0, 0);
@@ -441,25 +441,25 @@
             this.panellogo.Size = new System.Drawing.Size(155, 200);
             this.panellogo.TabIndex = 1;
             // 
-            // label2
+            // lblUsername
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.label2.Location = new System.Drawing.Point(61, 124);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 17);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "UserName";
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.lblUsername.Location = new System.Drawing.Point(61, 124);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(75, 17);
+            this.lblUsername.TabIndex = 2;
+            this.lblUsername.Text = "UserName";
             // 
-            // label1
+            // lblAdmin
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.label1.Location = new System.Drawing.Point(63, 153);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Admin";
+            this.lblAdmin.AutoSize = true;
+            this.lblAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.lblAdmin.Location = new System.Drawing.Point(63, 153);
+            this.lblAdmin.Name = "lblAdmin";
+            this.lblAdmin.Size = new System.Drawing.Size(68, 25);
+            this.lblAdmin.TabIndex = 0;
+            this.lblAdmin.Text = "Admin";
             // 
             // pictureBox1
             // 
@@ -524,11 +524,11 @@
         private System.Windows.Forms.Button btnProductList;
         private System.Windows.Forms.Button btnProduct;
         private System.Windows.Forms.Panel panellogo;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Button btndashboard;
         private System.Windows.Forms.Button btnBarcode;
+        public System.Windows.Forms.Label lblUsername;
+        public System.Windows.Forms.Label lblAdmin;
+        public System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
