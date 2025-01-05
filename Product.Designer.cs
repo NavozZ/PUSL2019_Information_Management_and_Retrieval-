@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Product));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtSerch = new MetroFramework.Controls.MetroTextBox();
+            this.txtSearch = new MetroFramework.Controls.MetroTextBox();
             this.picBtnAdd = new System.Windows.Forms.PictureBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,7 +54,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGreen;
-            this.panel1.Controls.Add(this.txtSerch);
+            this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Controls.Add(this.picBtnAdd);
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.label1);
@@ -65,41 +65,42 @@
             this.panel1.Size = new System.Drawing.Size(984, 87);
             this.panel1.TabIndex = 3;
             // 
-            // txtSerch
+            // txtSearch
             // 
-            this.txtSerch.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.txtSearch.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             // 
             // 
             // 
-            this.txtSerch.CustomButton.Image = null;
-            this.txtSerch.CustomButton.Location = new System.Drawing.Point(401, 1);
-            this.txtSerch.CustomButton.Name = "";
-            this.txtSerch.CustomButton.Size = new System.Drawing.Size(31, 31);
-            this.txtSerch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtSerch.CustomButton.TabIndex = 1;
-            this.txtSerch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtSerch.CustomButton.UseSelectable = true;
-            this.txtSerch.CustomButton.Visible = false;
-            this.txtSerch.DisplayIcon = true;
-            this.txtSerch.Icon = ((System.Drawing.Image)(resources.GetObject("txtSerch.Icon")));
-            this.txtSerch.Lines = new string[0];
-            this.txtSerch.Location = new System.Drawing.Point(301, 37);
-            this.txtSerch.MaxLength = 32767;
-            this.txtSerch.Multiline = true;
-            this.txtSerch.Name = "txtSerch";
-            this.txtSerch.PasswordChar = '\0';
-            this.txtSerch.PromptText = "Serch here";
-            this.txtSerch.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtSerch.SelectedText = "";
-            this.txtSerch.SelectionLength = 0;
-            this.txtSerch.SelectionStart = 0;
-            this.txtSerch.ShortcutsEnabled = true;
-            this.txtSerch.Size = new System.Drawing.Size(433, 33);
-            this.txtSerch.TabIndex = 3;
-            this.txtSerch.UseSelectable = true;
-            this.txtSerch.WaterMark = "Serch here";
-            this.txtSerch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtSerch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtSearch.CustomButton.Image = null;
+            this.txtSearch.CustomButton.Location = new System.Drawing.Point(401, 1);
+            this.txtSearch.CustomButton.Name = "";
+            this.txtSearch.CustomButton.Size = new System.Drawing.Size(31, 31);
+            this.txtSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtSearch.CustomButton.TabIndex = 1;
+            this.txtSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtSearch.CustomButton.UseSelectable = true;
+            this.txtSearch.CustomButton.Visible = false;
+            this.txtSearch.DisplayIcon = true;
+            this.txtSearch.Icon = ((System.Drawing.Image)(resources.GetObject("txtSearch.Icon")));
+            this.txtSearch.Lines = new string[0];
+            this.txtSearch.Location = new System.Drawing.Point(301, 37);
+            this.txtSearch.MaxLength = 32767;
+            this.txtSearch.Multiline = true;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PasswordChar = '\0';
+            this.txtSearch.PromptText = "Serch here";
+            this.txtSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtSearch.SelectedText = "";
+            this.txtSearch.SelectionLength = 0;
+            this.txtSearch.SelectionStart = 0;
+            this.txtSearch.ShortcutsEnabled = true;
+            this.txtSearch.Size = new System.Drawing.Size(433, 33);
+            this.txtSearch.TabIndex = 3;
+            this.txtSearch.UseSelectable = true;
+            this.txtSearch.WaterMark = "Serch here";
+            this.txtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // picBtnAdd
             // 
@@ -284,7 +285,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvProduct;
         private System.Windows.Forms.PictureBox picBtnAdd;
-        private MetroFramework.Controls.MetroTextBox txtSerch;
+        private MetroFramework.Controls.MetroTextBox txtSearch;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;

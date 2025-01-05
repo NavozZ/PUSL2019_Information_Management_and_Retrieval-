@@ -63,6 +63,16 @@ namespace PUSL2019_Information_Management_and_Retrieval_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_add_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-add-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_add_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-add-50", resourceCulture);
@@ -76,6 +86,16 @@ namespace PUSL2019_Information_Management_and_Retrieval_.Properties {
         internal static System.Drawing.Bitmap icons8_brand_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-brand-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_cart_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-cart-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,6 +173,26 @@ namespace PUSL2019_Information_Management_and_Retrieval_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_reduce_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-reduce-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_search_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-search-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_supplier_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-supplier-30", resourceCulture);
@@ -166,6 +206,26 @@ namespace PUSL2019_Information_Management_and_Retrieval_.Properties {
         internal static System.Drawing.Bitmap icons8_user_80 {
             get {
                 object obj = ResourceManager.GetObject("icons8-user-80", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap key2 {
+            get {
+                object obj = ResourceManager.GetObject("key2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shop_2 {
+            get {
+                object obj = ResourceManager.GetObject("shop 2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

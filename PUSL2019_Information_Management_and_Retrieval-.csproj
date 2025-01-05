@@ -33,6 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="DarrenLee.Media">
+      <HintPath>C:\Users\ASUS\Downloads\DarrenLee.Media.dll</HintPath>
+    </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
@@ -53,8 +65,29 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Zen.Barcode.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b5ae55aa76d2d9de, processorArchitecture=MSIL">
+      <HintPath>packages\Zen.Barcode.Rendering.Framework.3.1.10729.1\lib\Zen.Barcode.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>packages\ZXing.Net.0.16.9\lib\net47\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>packages\ZXing.Net.0.16.9\lib\net47\zxing.presentation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Barcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barcode.Designer.cs">
+      <DependentUpon>Barcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adjustment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adjustment.Designer.cs">
+      <DependentUpon>Adjustment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Brand Module.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +99,12 @@
     </Compile>
     <Compile Include="Brand.Designer.cs">
       <DependentUpon>Brand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashier.Designer.cs">
+      <DependentUpon>Cashier.cs</DependentUpon>
     </Compile>
     <Compile Include="Category.cs">
       <SubType>Form</SubType>
@@ -80,6 +119,18 @@
       <DependentUpon>CategoryModule.cs</DependentUpon>
     </Compile>
     <Compile Include="DBConnect.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LookUpProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LookUpProduct.Designer.cs">
+      <DependentUpon>LookUpProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,11 +155,35 @@
     <Compile Include="ProductModule.Designer.cs">
       <DependentUpon>ProductModule.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProductStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductStock.Designer.cs">
+      <DependentUpon>ProductStock.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Barcode.resx">
+      <DependentUpon>Barcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adjustment.resx">
+      <DependentUpon>Adjustment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Brand Module.resx">
       <DependentUpon>Brand Module.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="Qty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Qty.Designer.cs">
+      <DependentUpon>Qty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Record.Designer.cs">
+      <DependentUpon>Record.cs</DependentUpon>
+    </Compile>
     <Compile Include="Supplier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +196,18 @@
     <Compile Include="SupplierModule.Designer.cs">
       <DependentUpon>SupplierModule.cs</DependentUpon>
     </Compile>
+    <Compile Include="Stocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stocs.Designer.cs">
+      <DependentUpon>Stocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store.Designer.cs">
+      <DependentUpon>Store.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,11 +217,20 @@
     <EmbeddedResource Include="Brand.resx">
       <DependentUpon>Brand.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cashier.resx">
+      <DependentUpon>Cashier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Category.resx">
       <DependentUpon>Category.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CategoryModule.resx">
       <DependentUpon>CategoryModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LookUpProduct.resx">
+      <DependentUpon>LookUpProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -148,6 +244,9 @@
     <EmbeddedResource Include="ProductModule.resx">
       <DependentUpon>ProductModule.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProductStock.resx">
+      <DependentUpon>ProductStock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -158,11 +257,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Qty.resx">
+      <DependentUpon>Qty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Record.resx">
+      <DependentUpon>Record.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Supplier.resx">
       <DependentUpon>Supplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SupplierModule.resx">
       <DependentUpon>SupplierModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stocs.resx">
+      <DependentUpon>Stocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store.resx">
+      <DependentUpon>Store.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserAccount.resx">
       <DependentUpon>UserAccount.cs</DependentUpon>
@@ -183,7 +294,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\key21.jpg" />
+    <None Include="Resources\shop 21.jpg" />
+    <None Include="Resources\icons8-cart-30.png" />
+    <None Include="Resources\icons8-add-30.png" />
+    <None Include="Resources\icons8-reduce-30.png" />
+    <None Include="Resources\icons8-search-30.png" />
     <None Include="Resources\icons8-supplier-30.png" />
+    <None Include="Resources\shop 2.jpg" />
+    <None Include="Resources\key2.jpg" />
+    <None Include="Resources\55.jpg" />
     <None Include="Resources\icons8-category-30.png" />
     <None Include="Resources\icons8-product-30.png" />
     <None Include="Resources\icons8-delete-20.png" />
@@ -191,6 +311,9 @@
     <None Include="Resources\icons8-close-window-40.png" />
     <None Include="Resources\icons8-close-window.gif" />
     <None Include="Resources\icons8-close-window-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -309,6 +309,7 @@
             this.Name = "ProductModule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductModule";
+            this.Load += new System.EventHandler(this.ProductModule_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
