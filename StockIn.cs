@@ -18,9 +18,11 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         DBConnect dbcon = new DBConnect();
         SqlDataReader dr;
         string stitle = "SuperMarket POS";
+        private object ex;
 
         public object txtConPerson { get; private set; }
         public int Id { get; private set; }
+        public int i { get; private set; }
 
         public StockIn()
         {
@@ -148,7 +150,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
                         }
                         //update StockIn quantity
                         cn.Open();
-                        cm = new SqlCommand("UPDATE tbProduct SET qty = qty + " + int. Parse(dgvStockIn.Rows[i].Cells[5].Value.ToString()) + "status ='Done'WHERE id  LIKE" + dgvStockIn.Rows[i].Cells[3].Value.ToString() + "''", cn);
+                        cm = new SqlCommand("UPDATE tbStockIn SET qty = qty + " + int. Parse(dgvStockIn.Rows[i].Cells[5].Value.ToString()) + "status ='Done'WHERE id  LIKE" + dgvStockIn.Rows[i].Cells[3].Value.ToString() + "''", cn);
                         cm.ExecuteNonQuery();
                         cn.Close();
                     }
@@ -156,7 +158,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
                     LoadStockIn();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
 
             {
                 MessageBox.Show(ex.Message, stitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);

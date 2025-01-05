@@ -114,6 +114,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
         private void btnStockEntry_Click(object sender, EventArgs e)
         {
+            openChildForm(new StockIn());
             hideSubmenu();
         }
 
