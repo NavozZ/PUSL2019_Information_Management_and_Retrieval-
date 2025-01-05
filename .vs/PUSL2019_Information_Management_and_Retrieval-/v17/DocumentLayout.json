@@ -1,0 +1,113 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\projects\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|D:\\projects\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|D:\\projects\\brand module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|solutionrelative:brand module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|D:\\projects\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|solutionrelative:brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|D:\\projects\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|solutionrelative:dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|D:\\projects\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|solutionrelative:useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|D:\\projects\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cs",
+              "DocumentMoniker": "D:\\projects\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "D:\\projects\\Main.cs",
+              "RelativeToolTip": "Main.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T03:50:10.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Brand Module.cs [Design]",
+              "DocumentMoniker": "D:\\projects\\Brand Module.cs",
+              "RelativeDocumentMoniker": "Brand Module.cs",
+              "ToolTip": "D:\\projects\\Brand Module.cs [Design]",
+              "RelativeToolTip": "Brand Module.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T10:10:59.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Brand.cs [Design]",
+              "DocumentMoniker": "D:\\projects\\Brand.cs",
+              "RelativeDocumentMoniker": "Brand.cs",
+              "ToolTip": "D:\\projects\\Brand.cs [Design]",
+              "RelativeToolTip": "Brand.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T10:10:56.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DASHBOARD.cs [Design]",
+              "DocumentMoniker": "D:\\projects\\DASHBOARD.cs",
+              "RelativeDocumentMoniker": "DASHBOARD.cs",
+              "ToolTip": "D:\\projects\\DASHBOARD.cs [Design]",
+              "RelativeToolTip": "DASHBOARD.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T10:10:54.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserAccount.cs [Design]",
+              "DocumentMoniker": "D:\\projects\\UserAccount.cs",
+              "RelativeDocumentMoniker": "UserAccount.cs",
+              "ToolTip": "D:\\projects\\UserAccount.cs [Design]",
+              "RelativeToolTip": "UserAccount.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T08:44:40.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Main.cs [Design]",
+              "DocumentMoniker": "D:\\projects\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "D:\\projects\\Main.cs [Design]",
+              "RelativeToolTip": "Main.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T08:06:17.581Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

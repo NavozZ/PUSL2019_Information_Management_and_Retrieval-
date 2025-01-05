@@ -30,19 +30,28 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         {
             int i = 0;
             dgvProduct.Rows.Clear();
-            cm = new SqlCommand("SELECT p.pcode,p.barcode, p.pdesc, b.brand, c.category, p.price, p.reorder FROM tbProduct AS p INNER JOIN tbBrand AS b ON b.id = p.bid INNER JOIN tbCategory AS c on c.id = p.cid WHERE CONCAT (p.pdesc,b.brand, c.category LIKE %" + txtSerch.Text + "%",cn);
+
+            // Correct query with parameterized input
+            string query = "SELECT p.pcode, p.barcode, p.pdesc, b.brand, c.category, p.price, p.reorder " +
+                           "FROM tbProduct AS p " +
+                           "INNER JOIN tbBrand AS b ON b.id = p.bid " +
+                           "INNER JOIN tbCategory AS c ON c.id = p.cid " +
+                           "WHERE CONCAT(p.pdesc, b.brand, c.category) LIKE @search";
+
+            cm = new SqlCommand(query, cn);
+            cm.Parameters.AddWithValue("@search", "%" + txtSerch.Text + "%"); // Parameterized to avoid SQL injection
+
             cn.Open();
             dr = cm.ExecuteReader();
             while (dr.Read())
             {
                 i++;
                 dgvProduct.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString());
-
             }
             dr.Close();
             cn.Close();
-
         }
+
 
         private void picBtnAdd_Click(object sender, EventArgs e)
         {

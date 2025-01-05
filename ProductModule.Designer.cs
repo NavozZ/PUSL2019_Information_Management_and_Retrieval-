@@ -73,7 +73,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 22);
+            this.label1.Size = new System.Drawing.Size(125, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Product Module";
             // 
@@ -82,7 +82,7 @@
             this.lblPcode.AutoSize = true;
             this.lblPcode.Location = new System.Drawing.Point(23, 105);
             this.lblPcode.Name = "lblPcode";
-            this.lblPcode.Size = new System.Drawing.Size(146, 21);
+            this.lblPcode.Size = new System.Drawing.Size(121, 20);
             this.lblPcode.TabIndex = 1;
             this.lblPcode.Text = "Product Code :";
             // 
@@ -90,7 +90,7 @@
             // 
             this.txtPcode.Location = new System.Drawing.Point(187, 105);
             this.txtPcode.Name = "txtPcode";
-            this.txtPcode.Size = new System.Drawing.Size(179, 30);
+            this.txtPcode.Size = new System.Drawing.Size(179, 25);
             this.txtPcode.TabIndex = 2;
             // 
             // btnSave
@@ -101,7 +101,7 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(465, 386);
+            this.btnSave.Location = new System.Drawing.Point(514, 388);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(104, 35);
             this.btnSave.TabIndex = 3;
@@ -114,13 +114,14 @@
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancel.AutoSize = true;
             this.btnCancel.BackColor = System.Drawing.Color.ForestGreen;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(680, 386);
+            this.btnCancel.Location = new System.Drawing.Point(706, 388);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(113, 35);
+            this.btnCancel.Size = new System.Drawing.Size(84, 33);
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -128,14 +129,11 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUpdate.BackColor = System.Drawing.Color.OliveDrab;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(578, 386);
+            this.btnUpdate.Location = new System.Drawing.Point(599, 388);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(96, 35);
             this.btnUpdate.TabIndex = 5;
@@ -147,18 +145,19 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 393);
+            this.label3.Location = new System.Drawing.Point(36, 388);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(25, 21);
+            this.label3.Size = new System.Drawing.Size(22, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "id";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblBarcode
             // 
             this.lblBarcode.AutoSize = true;
             this.lblBarcode.Location = new System.Drawing.Point(461, 108);
             this.lblBarcode.Name = "lblBarcode";
-            this.lblBarcode.Size = new System.Drawing.Size(95, 21);
+            this.lblBarcode.Size = new System.Drawing.Size(81, 20);
             this.lblBarcode.TabIndex = 7;
             this.lblBarcode.Text = "Barcode :";
             // 
@@ -167,7 +166,7 @@
             this.lblDesc.AutoSize = true;
             this.lblDesc.Location = new System.Drawing.Point(23, 163);
             this.lblDesc.Name = "lblDesc";
-            this.lblDesc.Size = new System.Drawing.Size(117, 21);
+            this.lblDesc.Size = new System.Drawing.Size(99, 20);
             this.lblDesc.TabIndex = 8;
             this.lblDesc.Text = "Description :";
             // 
@@ -176,7 +175,7 @@
             this.lblBrand.AutoSize = true;
             this.lblBrand.Location = new System.Drawing.Point(23, 208);
             this.lblBrand.Name = "lblBrand";
-            this.lblBrand.Size = new System.Drawing.Size(70, 21);
+            this.lblBrand.Size = new System.Drawing.Size(60, 20);
             this.lblBrand.TabIndex = 9;
             this.lblBrand.Text = "Brand :";
             // 
@@ -185,7 +184,7 @@
             this.lblCategory.AutoSize = true;
             this.lblCategory.Location = new System.Drawing.Point(23, 254);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(106, 21);
+            this.lblCategory.Size = new System.Drawing.Size(87, 20);
             this.lblCategory.TabIndex = 10;
             this.lblCategory.Text = "Category :";
             // 
@@ -194,7 +193,7 @@
             this.lblPrice.AutoSize = true;
             this.lblPrice.Location = new System.Drawing.Point(23, 298);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(63, 21);
+            this.lblPrice.Size = new System.Drawing.Size(54, 20);
             this.lblPrice.TabIndex = 11;
             this.lblPrice.Text = "Price :";
             // 
@@ -203,7 +202,7 @@
             this.lblReOrder.AutoSize = true;
             this.lblReOrder.Location = new System.Drawing.Point(461, 298);
             this.lblReOrder.Name = "lblReOrder";
-            this.lblReOrder.Size = new System.Drawing.Size(150, 21);
+            this.lblReOrder.Size = new System.Drawing.Size(128, 20);
             this.lblReOrder.TabIndex = 12;
             this.lblReOrder.Text = "Re-Order Level :";
             // 
@@ -211,14 +210,14 @@
             // 
             this.txtBarcode.Location = new System.Drawing.Point(562, 105);
             this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Size = new System.Drawing.Size(202, 30);
+            this.txtBarcode.Size = new System.Drawing.Size(202, 25);
             this.txtBarcode.TabIndex = 13;
             // 
             // txtPdesc
             // 
             this.txtPdesc.Location = new System.Drawing.Point(187, 163);
             this.txtPdesc.Name = "txtPdesc";
-            this.txtPdesc.Size = new System.Drawing.Size(577, 30);
+            this.txtPdesc.Size = new System.Drawing.Size(577, 25);
             this.txtPdesc.TabIndex = 14;
             // 
             // cboBrand
@@ -226,7 +225,7 @@
             this.cboBrand.FormattingEnabled = true;
             this.cboBrand.Location = new System.Drawing.Point(187, 208);
             this.cboBrand.Name = "cboBrand";
-            this.cboBrand.Size = new System.Drawing.Size(577, 29);
+            this.cboBrand.Size = new System.Drawing.Size(577, 27);
             this.cboBrand.TabIndex = 15;
             // 
             // cboCategory
@@ -234,14 +233,14 @@
             this.cboCategory.FormattingEnabled = true;
             this.cboCategory.Location = new System.Drawing.Point(187, 254);
             this.cboCategory.Name = "cboCategory";
-            this.cboCategory.Size = new System.Drawing.Size(577, 29);
+            this.cboCategory.Size = new System.Drawing.Size(577, 27);
             this.cboCategory.TabIndex = 16;
             // 
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(187, 298);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(179, 30);
+            this.txtPrice.Size = new System.Drawing.Size(179, 25);
             this.txtPrice.TabIndex = 17;
             // 
             // UDReOrder
@@ -258,7 +257,7 @@
             0,
             0});
             this.UDReOrder.Name = "UDReOrder";
-            this.UDReOrder.Size = new System.Drawing.Size(147, 30);
+            this.UDReOrder.Size = new System.Drawing.Size(147, 25);
             this.UDReOrder.TabIndex = 18;
             this.UDReOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.UDReOrder.Value = new decimal(new int[] {
@@ -282,9 +281,9 @@
             // 
             // ProductModule
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(911, 575);
+            this.ClientSize = new System.Drawing.Size(882, 464);
             this.Controls.Add(this.UDReOrder);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.cboCategory);

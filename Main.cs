@@ -23,9 +23,24 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             InitializeComponent();
             customizedesing();
             cn = new SqlConnection(dbcon.myConnection());
-            cn.Open();
             
             
+            
+        }
+        private Form activeform = null;
+        public void openChildForm(Form childForm)
+        {
+            if(activeform != null)
+                activeform.Close();
+            activeform = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            lbltitle.Text = childForm.Text;
+            PanelMain.Controls.Add(childForm);
+            PanelMain.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
 
         private void customizedesing()
@@ -65,7 +80,8 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
         private void btndashboard_Click(object sender, EventArgs e)
         {
-
+          //  openChildForm(new DASHBOARD());
+            hideSubmenu();
         }
 
         private void btnProduct_Click(object sender, EventArgs e)
@@ -81,11 +97,13 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
         private void btnCategory_Click(object sender, EventArgs e)
         {
+            openChildForm(new Category());
             hideSubmenu();
         }
 
         private void btnBrand_Click(object sender, EventArgs e)
         {
+            openChildForm(new Brand());
             hideSubmenu();
         }
 
@@ -106,6 +124,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
         private void btnSupplier_Click(object sender, EventArgs e)
         {
+            openChildForm(new supplier());
             hideSubmenu();
         }
 
@@ -131,6 +150,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
         private void btnUser_Click(object sender, EventArgs e)
         {
+            openChildForm(new UserAccount());
             hideSubmenu();
         }
 
@@ -142,6 +162,11 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         private void btnlogout_Click(object sender, EventArgs e)
         {
             hideSubmenu();
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            btndashboard.PerformClick();
         }
     }
 }
