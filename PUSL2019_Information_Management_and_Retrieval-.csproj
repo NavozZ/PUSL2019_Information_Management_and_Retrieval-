@@ -92,14 +92,6 @@
       <DependentUpon>CategoryModule.cs</DependentUpon>
     </Compile>
     <Compile Include="DBConnect.cs" />
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="LookUpProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,11 +192,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LookUpProduct.resx">
       <DependentUpon>LookUpProduct.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Login.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
