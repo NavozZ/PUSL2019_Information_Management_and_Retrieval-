@@ -71,8 +71,9 @@
     <Compile Include="Discount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Discount.Designer.cs">
+	  <Compile> Include="Discount.Designer.cs">
       <DependentUpon>Discount.cs</DependentUpon>
+  </Compile>
     <Compile Include="Cashier.cs">
       <SubType>Form</SubType>
     </Compile>
