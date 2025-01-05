@@ -56,6 +56,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnBarcode = new System.Windows.Forms.Button();
             this.PanelTitle.SuspendLayout();
             this.SidePanel.SuspendLayout();
             this.PanelSubSettings.SuspendLayout();
@@ -74,7 +75,7 @@
             this.PanelMain.Location = new System.Drawing.Point(230, 40);
             this.PanelMain.Margin = new System.Windows.Forms.Padding(4);
             this.PanelMain.Name = "PanelMain";
-            this.PanelMain.Size = new System.Drawing.Size(954, 521);
+            this.PanelMain.Size = new System.Drawing.Size(866, 606);
             this.PanelMain.TabIndex = 5;
             this.PanelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -85,7 +86,7 @@
             this.PanelTitle.Location = new System.Drawing.Point(230, 0);
             this.PanelTitle.Margin = new System.Windows.Forms.Padding(4);
             this.PanelTitle.Name = "PanelTitle";
-            this.PanelTitle.Size = new System.Drawing.Size(954, 40);
+            this.PanelTitle.Size = new System.Drawing.Size(866, 32);
             this.PanelTitle.TabIndex = 4;
             // 
             // lbltitle
@@ -93,10 +94,9 @@
             this.lbltitle.AutoSize = true;
             this.lbltitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbltitle.Font = new System.Drawing.Font("Modern No. 20", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.lbltitle.Location = new System.Drawing.Point(472, 11);
-            this.lbltitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbltitle.Location = new System.Drawing.Point(354, 9);
             this.lbltitle.Name = "lbltitle";
-            this.lbltitle.Size = new System.Drawing.Size(128, 26);
+            this.lbltitle.Size = new System.Drawing.Size(103, 22);
             this.lbltitle.TabIndex = 3;
             this.lbltitle.Text = "TitleName";
             this.lbltitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -121,7 +121,7 @@
             this.SidePanel.Location = new System.Drawing.Point(0, 0);
             this.SidePanel.Margin = new System.Windows.Forms.Padding(4);
             this.SidePanel.Name = "SidePanel";
-            this.SidePanel.Size = new System.Drawing.Size(230, 561);
+            this.SidePanel.Size = new System.Drawing.Size(172, 638);
             this.SidePanel.TabIndex = 3;
             // 
             // btnlogout
@@ -143,6 +143,7 @@
             // 
             // PanelSubSettings
             // 
+            this.PanelSubSettings.Controls.Add(this.btnBarcode);
             this.PanelSubSettings.Controls.Add(this.btnstore);
             this.PanelSubSettings.Controls.Add(this.btnUser);
             this.PanelSubSettings.Dock = System.Windows.Forms.DockStyle.Top;
@@ -426,7 +427,7 @@
             this.btndashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.btndashboard.FlatAppearance.BorderSize = 0;
             this.btndashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndashboard.Location = new System.Drawing.Point(0, 246);
+            this.btndashboard.Location = new System.Drawing.Point(0, 200);
             this.btndashboard.Margin = new System.Windows.Forms.Padding(0);
             this.btndashboard.Name = "btndashboard";
             this.btndashboard.Size = new System.Drawing.Size(209, 55);
@@ -452,10 +453,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.label2.Location = new System.Drawing.Point(81, 153);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(61, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 20);
+            this.label2.Size = new System.Drawing.Size(75, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "UserName";
             // 
@@ -463,10 +463,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.label1.Location = new System.Drawing.Point(84, 188);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(63, 153);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 29);
+            this.label1.Size = new System.Drawing.Size(68, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Admin";
             // 
@@ -478,16 +477,31 @@
             this.pictureBox1.Location = new System.Drawing.Point(85, 33);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(107, 98);
+            this.pictureBox1.Size = new System.Drawing.Size(80, 80);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // btnBarcode
+            // 
+            this.btnBarcode.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnBarcode.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBarcode.FlatAppearance.BorderSize = 0;
+            this.btnBarcode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBarcode.Location = new System.Drawing.Point(0, 90);
+            this.btnBarcode.Name = "btnBarcode";
+            this.btnBarcode.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnBarcode.Size = new System.Drawing.Size(155, 45);
+            this.btnBarcode.TabIndex = 7;
+            this.btnBarcode.Text = "Barcode";
+            this.btnBarcode.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBarcode.UseVisualStyleBackColor = false;
+            // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGreen;
-            this.ClientSize = new System.Drawing.Size(1184, 561);
+            this.ClientSize = new System.Drawing.Size(1038, 638);
             this.Controls.Add(this.PanelMain);
             this.Controls.Add(this.PanelTitle);
             this.Controls.Add(this.SidePanel);
@@ -539,6 +553,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Button btndashboard;
+        private System.Windows.Forms.Button btnBarcode;
     }
 }
 

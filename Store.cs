@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace PUSL2019_Information_Management_and_Retrieval_
 {
-    public partial class Login : Form
+    public partial class Store : Form
     {
-        public Login()
+        public Store()
         {
             InitializeComponent();
-        }
-
-        private void txtName_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
