@@ -32,7 +32,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             }
         }
 
-        public void slide(Button button)
+        public void Slide(Button button)
         {
             panelSlide.BackColor = Color.White;
             panelSlide.Height = button.Height;
@@ -41,7 +41,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         #region button
         private void btnNTran_Click(object sender, EventArgs e)
         {
-            slide(btnNTran);
+            Slide(btnNTran);
             GetTrainNo();
         }
 
@@ -60,32 +60,32 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
         private void btnDiscount_Click(object sender, EventArgs e)
         {
-            slide(btnDiscount);
+            Slide(btnDiscount);
         }
 
         private void btnSettle_Click(object sender, EventArgs e)
         {
-            slide(btnSettle);
+            Slide(btnSettle);
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            slide(btnClear);
+            Slide(btnClear);
         }
 
         private void btnDSales_Click(object sender, EventArgs e)
         {
-            slide(btnDSales);
+            Slide(btnDSales);
         }
 
         private void btnPass_Click(object sender, EventArgs e)
         {
-            slide(btnPass);
+            Slide(btnPass);
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            slide(btnLogout);
+            Slide(btnLogout);
         }
         #endregion button
 
@@ -96,7 +96,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             double discount = 0;
             dgvCash.Rows.Clear();
             cn.Open();
-            cm = new SqlCommand("SELECT c.id,c.pcode,c.pdesc,c.price, c.disc. c.total FROM tbCart AS c INNER JOIN tbProduct AS p ON c.pcode=p.code WHERE c.transno LIKE @transno and c.status LIKE 'pending'",cn);
+            cm = new SqlCommand("SELECT c.id,c.pcode,c.pdesc,c.price,c.qty, c.disc, c.total FROM tbCart AS c INNER JOIN tbProduct AS p ON c.pcode=p.code WHERE c.transno LIKE @transno and c.status LIKE 'pending'",cn);
             cm.Parameters.AddWithValue("@transno",lblTranNo.Text);
             dr = cm.ExecuteReader();
             while (dr.Read())
@@ -134,9 +134,11 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             lblTranNo.Text = transno;
         }
 
+        private void picClose_Click(object sender, EventArgs e)
+        {
 
-       
+        }
 
-
+      
     }
 }
