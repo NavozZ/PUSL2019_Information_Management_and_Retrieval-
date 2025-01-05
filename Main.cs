@@ -80,7 +80,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
         private void btndashboard_Click(object sender, EventArgs e)
         {
-          //  openChildForm(new DASHBOARD());
+            openChildForm(new DASHBOARD());
             hideSubmenu();
         }
 

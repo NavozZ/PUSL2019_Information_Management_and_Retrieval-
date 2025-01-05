@@ -88,7 +88,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
                     }
                     if(_role=="Cashier")
                     {
-                        MessageBox.Show("Welcome "+ _name + "|","ACCESS GRANTED",MessageBoxButtons.OK,Messa)
+                        MessageBox.Show("Welcome " + _name + "|", "ACCESS GRANTED", MessageBoxButtons.OK, Messa)
                     }
 
                 }

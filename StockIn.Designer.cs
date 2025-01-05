@@ -1,6 +1,6 @@
 ﻿namespace PUSL2019_Information_Management_and_Retrieval_
 {
-    partial class STOCKENTRY
+    partial class StockIn
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label7 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,14 +47,14 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dgvStockIn = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnSave = new System.Windows.Forms.Button();
+            this.btnEntry = new System.Windows.Forms.Button();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtConPreson = new System.Windows.Forms.TextBox();
             this.cbSupplier = new System.Windows.Forms.ComboBox();
-            this.IbId = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.LinProduct = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.dtStockIn = new System.Windows.Forms.DateTimePicker();
             this.txtStockInBy = new System.Windows.Forms.TextBox();
@@ -175,6 +175,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGreen;
+            this.panel1.Controls.Add(this.btnEntry);
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -213,9 +214,9 @@
             this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.dgvStockIn);
             this.tabPage1.Controls.Add(this.panel2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 35);
+            this.tabPage1.Location = new System.Drawing.Point(4, 38);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(976, 522);
+            this.tabPage1.Size = new System.Drawing.Size(976, 519);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Stock In";
             // 
@@ -224,14 +225,14 @@
             this.dgvStockIn.AllowUserToAddRows = false;
             this.dgvStockIn.BackgroundColor = System.Drawing.Color.White;
             this.dgvStockIn.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightGreen;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStockIn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightGreen;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStockIn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvStockIn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStockIn.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -256,15 +257,14 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btnSave);
             this.panel2.Controls.Add(this.txtAddress);
             this.panel2.Controls.Add(this.txtConPreson);
             this.panel2.Controls.Add(this.cbSupplier);
-            this.panel2.Controls.Add(this.IbId);
+            this.panel2.Controls.Add(this.lblId);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.linkLabel3);
+            this.panel2.Controls.Add(this.LinProduct);
             this.panel2.Controls.Add(this.linkLabel2);
             this.panel2.Controls.Add(this.dtStockIn);
             this.panel2.Controls.Add(this.txtStockInBy);
@@ -278,20 +278,21 @@
             this.panel2.Size = new System.Drawing.Size(976, 177);
             this.panel2.TabIndex = 0;
             // 
-            // btnSave
+            // btnEntry
             // 
-            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnEntry.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.BackColor = System.Drawing.Color.LimeGreen;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(803, 129);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(165, 35);
-            this.btnSave.TabIndex = 6;
-            this.btnSave.Text = "Entry";
-            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnEntry.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnEntry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEntry.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntry.ForeColor = System.Drawing.Color.Black;
+            this.btnEntry.Location = new System.Drawing.Point(835, 21);
+            this.btnEntry.Name = "btnEntry";
+            this.btnEntry.Size = new System.Drawing.Size(112, 35);
+            this.btnEntry.TabIndex = 6;
+            this.btnEntry.Text = "Entry";
+            this.btnEntry.UseVisualStyleBackColor = false;
+            this.btnEntry.Click += new System.EventHandler(this.btnEntry_Click_1);
             // 
             // txtAddress
             // 
@@ -315,15 +316,15 @@
             this.cbSupplier.Size = new System.Drawing.Size(261, 21);
             this.cbSupplier.TabIndex = 13;
             // 
-            // IbId
+            // lblId
             // 
-            this.IbId.AutoSize = true;
-            this.IbId.Location = new System.Drawing.Point(485, 123);
-            this.IbId.Name = "IbId";
-            this.IbId.Size = new System.Drawing.Size(25, 13);
-            this.IbId.TabIndex = 12;
-            this.IbId.Text = "IbId";
-            this.IbId.Visible = false;
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(485, 123);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(25, 13);
+            this.lblId.TabIndex = 12;
+            this.lblId.Text = "IbId";
+            this.lblId.Visible = false;
             // 
             // label6
             // 
@@ -343,16 +344,17 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Supplier :";
             // 
-            // linkLabel3
+            // LinProduct
             // 
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.LinkColor = System.Drawing.Color.DimGray;
-            this.linkLabel3.Location = new System.Drawing.Point(119, 114);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(163, 13);
-            this.linkLabel3.TabIndex = 8;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "[ Click Here to Browse Products ]";
+            this.LinProduct.AutoSize = true;
+            this.LinProduct.LinkColor = System.Drawing.Color.DimGray;
+            this.LinProduct.Location = new System.Drawing.Point(119, 141);
+            this.LinProduct.Name = "LinProduct";
+            this.LinProduct.Size = new System.Drawing.Size(163, 13);
+            this.LinProduct.TabIndex = 8;
+            this.LinProduct.TabStop = true;
+            this.LinProduct.Text = "[ Click Here to Browse Products ]";
+            this.LinProduct.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinProduct_LinkClicked_1);
             // 
             // linkLabel2
             // 
@@ -420,7 +422,7 @@
             this.metroTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(984, 561);
             this.metroTabControl1.TabIndex = 10;
             this.metroTabControl1.UseSelectable = true;
@@ -441,14 +443,14 @@
             this.dgvInStockHistory.AllowUserToAddRows = false;
             this.dgvInStockHistory.BackgroundColor = System.Drawing.Color.White;
             this.dgvInStockHistory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvInStockHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightGreen;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvInStockHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvInStockHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInStockHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -469,7 +471,7 @@
             this.dgvInStockHistory.RowTemplate.Height = 24;
             this.dgvInStockHistory.Size = new System.Drawing.Size(976, 337);
             this.dgvInStockHistory.TabIndex = 6;
-            this.dgvInStockHistory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInStockHistory_CellContentClick);
+            this.dgvInStockHistory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvInStockHistory_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -600,13 +602,13 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Filter By Date : From";
             // 
-            // STOCKENTRY
+            // StockIn
             // 
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.metroTabControl1);
-            this.Name = "STOCKENTRY";
-            this.Text = "Stocs";
+            this.Name = "StockIn";
+            this.Text = " STOCK ENTRY";
             this.panel1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockIn)).EndInit();
@@ -640,18 +642,11 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView dgvStockIn;
         private System.Windows.Forms.Panel panel2;
-        public System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.TextBox txtAddress;
-        private System.Windows.Forms.TextBox txtConPreson;
-        private System.Windows.Forms.ComboBox cbSupplier;
-        private System.Windows.Forms.Label IbId;
+        public System.Windows.Forms.Button btnEntry;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.LinkLabel linkLabel3;
+        private System.Windows.Forms.LinkLabel LinProduct;
         private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.DateTimePicker dtStockIn;
-        private System.Windows.Forms.TextBox txtStockInBy;
-        private System.Windows.Forms.TextBox txtRefNo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -673,5 +668,12 @@
         private System.Windows.Forms.DateTimePicker dtTo;
         private System.Windows.Forms.DateTimePicker dtFrom;
         private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.TextBox txtAddress;
+        public System.Windows.Forms.TextBox txtConPreson;
+        public System.Windows.Forms.ComboBox cbSupplier;
+        public System.Windows.Forms.DateTimePicker dtStockIn;
+        public System.Windows.Forms.TextBox txtStockInBy;
+        public System.Windows.Forms.TextBox txtRefNo;
+        public System.Windows.Forms.Label lblId;
     }
 }

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace PUSL2019_Information_Management_and_Retrieval_
 {
-    public partial class STOCKENTRY : Form
+    public partial class StockIn : Form
     {
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
@@ -19,7 +19,10 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         SqlDataReader dr;
         string stitle = "SuperMarket POS";
 
-        public STOCKENTRY()
+        public object txtConPerson { get; private set; }
+        public int Id { get; private set; }
+
+        public StockIn()
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
@@ -62,7 +65,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         }
 
 
-        private void cbSupplier_SelectedIndexChanged(object sender, EventArgs e)
+        private void CbSupplier_SelectedIndexChanged(object sender, EventArgs e)
         {
             cn.Open();
             cm = new SqlCommand("*SELECT*FROM tbSupplier WHERE supplier LIKE '"+cbSupplier.Text+"'",cn);
@@ -71,7 +74,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             if(dr.HasRows)
             {
                 lblId.Text = dr[Id].ToString();
-                txtConPerson.Text = dr["contactperson"].ToString();
+               txtConPerson = dr["contact person"].ToString();
                 txtAddress.Text = dr["address"].ToString();
 
 
@@ -117,15 +120,15 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
        
 
-        private void linProduct_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LinProduct_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             ProductStock productStock = new ProductStock(this);
             productStock.ShowDialog();
         }
 
-        private void btnEntry_Click(object sender, EventArgs e)
+        private void btnEntry_Click_1(object sender, EventArgs e)
         {
-           try
+            try
             {
                 if (dgvStockIn.Rows.Count > 0)
 
@@ -134,41 +137,41 @@ namespace PUSL2019_Information_Management_and_Retrieval_
                     if (MessageBox.Show("Are you sure want to save this record ", stitle, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) ;
 
                     {
-                     for(int i = 0; i  < dgvStockIn.Rows.Count;i++)
+                        for (int i = 0; i < dgvStockIn.Rows.Count; i++)
 
-                            //update product quantity
+                        //update product quantity
                         {
                             cn.Open();
-                            cm = new SqlCommand("UPDATE tbProduct SET qty = qty + " = int, Parse(dgvStockIn.Rows[i].Cells[5].Value.ToString()) + "WHERE pcode LIKE" + dgvStockIn.Rows[i].Cells[3].Value.ToString() + "''", cn);
+                            cm = new SqlCommand("UPDATE tbProduct SET qty = qty + " + int.Parse(dgvStockIn.Rows[i].Cells[5].Value.ToString()) + "WHERE pcode LIKE" + dgvStockIn.Rows[i].Cells[3].Value.ToString() + "''", cn);
                             cm.ExecuteNonQuery();
                             cn.Close();
                         }
-                                 //update StockIn quantity
-                            cn.Open() ;
-                             cm = new SqlCommand("UPDATE tbProduct SET qty = qty + " = int, Parse(dgvStockIn.Rows[i].Cells[5].Value.ToString()) + "status ='Done'WHERE id  LIKE" + dgvStockIn.Rows[i].Cells[3].Value.ToString() + "''", cn);
-                             cm.ExecuteNonQuery();
-                             cn.Close();
+                        //update StockIn quantity
+                        cn.Open();
+                        cm = new SqlCommand("UPDATE tbProduct SET qty = qty + " + int. Parse(dgvStockIn.Rows[i].Cells[5].Value.ToString()) + "status ='Done'WHERE id  LIKE" + dgvStockIn.Rows[i].Cells[3].Value.ToString() + "''", cn);
+                        cm.ExecuteNonQuery();
+                        cn.Close();
                     }
-                    clear();
-                    LoadStockIn ();
+                    Clear();
+                    LoadStockIn();
                 }
             }
-            catch (Exception ) 
-            
+            catch (Exception)
+
             {
-                MessageBox.Show(ex.Message,stitle,MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(ex.Message, stitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-        public void clear()
+        public void Clear()
 
         {
-            txtRefNo.clear();
-            txtStockInBy.clear();
-            dtStockIn value = DateTime.Now;
+            txtRefNo.Clear();
+            txtStockInBy.Clear();
+            dtStockIn.Value = DateTime.Now; 
         }
-        private void dgvStockIn_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void DgvStockIn_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string colName = dgvStockIn.coloumns[e.ColumnIndex].Name;
+            string colName = dgvStockIn.Columns[e.ColumnIndex].Name;
             if(colName =="Delete")
             {
                 if(MessageBox.Show("Remove this item?", stitle, MessageBoxButtons.YesNo, MessageBoxIcon.Question)==DialogResult.Yes)
@@ -184,10 +187,21 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
         }
 
-        private void dgvInStockHistory_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void DgvInStockHistory_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
-    }     
-   
+
+        private void LinProduct_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ProductStock productStock = new ProductStock(this);
+            productStock.ShowDialog();
+        }
+
+       
+    }
+
+    internal class DtStockIn
+    {
+    }
 }
