@@ -347,7 +347,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DASHBOARD";
             this.Text = "DASHBOARD";
-            this.Load += new System.EventHandler(this.DASHBOARD_Load);
+            //this.Load += new System.EventHandler(this.DASHBOARD_Load);
             this.panel1.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();

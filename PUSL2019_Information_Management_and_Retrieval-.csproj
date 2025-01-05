@@ -73,6 +73,12 @@
     <Compile Include="Brand.Designer.cs">
       <DependentUpon>Brand.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashier.Designer.cs">
+      <DependentUpon>Cashier.cs</DependentUpon>
+    </Compile>
     <Compile Include="Category.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,11 +92,11 @@
       <DependentUpon>CategoryModule.cs</DependentUpon>
     </Compile>
     <Compile Include="DBConnect.cs" />
-    <Compile Include="Login.cs">
+    <Compile Include="LookUpProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="LookUpProduct.Designer.cs">
+      <DependentUpon>LookUpProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -130,6 +136,12 @@
     <EmbeddedResource Include="Brand Module.resx">
       <DependentUpon>Brand Module.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="Qty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Qty.Designer.cs">
+      <DependentUpon>Qty.cs</DependentUpon>
+    </Compile>
     <Compile Include="Record.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,11 +181,17 @@
     <EmbeddedResource Include="Brand.resx">
       <DependentUpon>Brand.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cashier.resx">
+      <DependentUpon>Cashier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Category.resx">
       <DependentUpon>Category.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CategoryModule.resx">
       <DependentUpon>CategoryModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LookUpProduct.resx">
+      <DependentUpon>LookUpProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -203,6 +221,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Qty.resx">
+      <DependentUpon>Qty.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Record.resx">
       <DependentUpon>Record.cs</DependentUpon>
     </EmbeddedResource>
@@ -237,6 +258,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\icons8-search-30.png" />
     <None Include="Resources\icons8-supplier-30.png" />
     <None Include="Resources\shop 2.jpg" />
     <None Include="Resources\key2.jpg" />

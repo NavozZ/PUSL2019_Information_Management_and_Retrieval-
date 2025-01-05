@@ -35,6 +35,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.dgvStockIn = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,6 +65,21 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtRefNo = new System.Windows.Forms.TextBox();
+            this.txtStockInBy = new System.Windows.Forms.TextBox();
+            this.dtStockIn = new System.Windows.Forms.DateTimePicker();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.IbId = new System.Windows.Forms.Label();
+            this.cbSupplier = new System.Windows.Forms.ComboBox();
+            this.txtConPreson = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dgvInStockHistory = new System.Windows.Forms.DataGridView();
@@ -105,6 +122,7 @@
             // 
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Image = global::PUSL2019_Information_Management_and_Retrieval_.Properties.Resources.icons8_add_50;
             this.btnAdd.Location = new System.Drawing.Point(900, 17);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(47, 41);
@@ -117,6 +135,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label1.Image = global::PUSL2019_Information_Management_and_Retrieval_.Properties.Resources._55;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.Location = new System.Drawing.Point(9, 21);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
@@ -150,6 +169,39 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Stock In";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 38);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Size = new System.Drawing.Size(974, 442);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Stock In Record";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnSave);
+            this.panel2.Controls.Add(this.txtAddress);
+            this.panel2.Controls.Add(this.txtConPreson);
+            this.panel2.Controls.Add(this.cbSupplier);
+            this.panel2.Controls.Add(this.IbId);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.linkLabel3);
+            this.panel2.Controls.Add(this.linkLabel2);
+            this.panel2.Controls.Add(this.dtStockIn);
+            this.panel2.Controls.Add(this.txtStockInBy);
+            this.panel2.Controls.Add(this.txtRefNo);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(974, 177);
+            this.panel2.TabIndex = 0;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // dgvStockIn
             // 
@@ -299,14 +351,24 @@
             this.btnSave.Text = "Entry";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
-            // txtAddress
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Reference No :";
             // 
             this.txtAddress.Location = new System.Drawing.Point(594, 91);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(261, 20);
             this.txtAddress.TabIndex = 15;
             // 
-            // txtConPreson
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(8, 52);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(68, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Stock In By :";
             // 
             this.txtConPreson.Location = new System.Drawing.Point(594, 52);
             this.txtConPreson.Name = "txtConPreson";
@@ -340,8 +402,12 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "Address :";
             // 
-            // label6
+            // txtRefNo
             // 
+            this.txtRefNo.Location = new System.Drawing.Point(122, 14);
+            this.txtRefNo.Name = "txtRefNo";
+            this.txtRefNo.Size = new System.Drawing.Size(192, 20);
+            this.txtRefNo.TabIndex = 3;
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(485, 55);
             this.label6.Name = "label6";
@@ -349,7 +415,7 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Contact Person :";
             // 
-            // label5
+            // txtStockInBy
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(485, 21);
@@ -358,7 +424,7 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Supplier :";
             // 
-            // linkLabel3
+            // dtStockIn
             // 
             this.linkLabel3.AutoSize = true;
             this.linkLabel3.LinkColor = System.Drawing.Color.DimGray;
@@ -368,6 +434,10 @@
             this.linkLabel3.TabIndex = 8;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "[ Click Here to Browse Products ]";
+            this.dtStockIn.Location = new System.Drawing.Point(122, 91);
+            this.dtStockIn.Name = "dtStockIn";
+            this.dtStockIn.Size = new System.Drawing.Size(261, 20);
+            this.dtStockIn.TabIndex = 5;
             // 
             // linkLabel2
             // 
@@ -410,7 +480,14 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "Stock In Date  :";
             // 
-            // label3
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.LinkColor = System.Drawing.Color.DimGray;
+            this.linkLabel3.Location = new System.Drawing.Point(119, 114);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(163, 13);
+            this.linkLabel3.TabIndex = 8;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "[ Click Here to Browse Products ]";
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(8, 52);
@@ -551,7 +628,7 @@
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             this.dataGridViewTextBoxColumn9.Width = 68;
             // 
-            // label8
+            // IbId
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(6, 21);
@@ -560,7 +637,7 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Filter By Date : From";
             // 
-            // dtFrom
+            // cbSupplier
             // 
             this.dtFrom.CustomFormat = "dd/MM/yyyy";
             this.dtFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -568,7 +645,13 @@
             this.dtFrom.Name = "dtFrom";
             this.dtFrom.Size = new System.Drawing.Size(102, 20);
             this.dtFrom.TabIndex = 1;
+            this.cbSupplier.FormattingEnabled = true;
+            this.cbSupplier.Location = new System.Drawing.Point(594, 11);
+            this.cbSupplier.Name = "cbSupplier";
+            this.cbSupplier.Size = new System.Drawing.Size(261, 21);
+            this.cbSupplier.TabIndex = 13;
             // 
+            // txtConPreson
             // dtTo
             // 
             this.dtTo.CustomFormat = "dd/MM/yyyy";
