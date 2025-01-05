@@ -598,6 +598,7 @@
             this.dgvCash.RowTemplate.Height = 24;
             this.dgvCash.Size = new System.Drawing.Size(771, 624);
             this.dgvCash.TabIndex = 17;
+            this.dgvCash.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCash_CellContentClick);
             // 
             // Column1
             // 
@@ -744,7 +745,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label lblname;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label lblDisplayTotale;
         private System.Windows.Forms.Label lblVatable;
@@ -776,5 +776,6 @@
         private System.Windows.Forms.DataGridViewImageColumn colAdd;
         private System.Windows.Forms.DataGridViewImageColumn colReduce;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
+        public System.Windows.Forms.Label lblname;
     }
 }

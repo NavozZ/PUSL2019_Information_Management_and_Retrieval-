@@ -167,6 +167,13 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         private void Main_Load(object sender, EventArgs e)
         {
             btndashboard.PerformClick();
+
+            if (MessageBox.Show("Logout Application?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Hide();
+                Login login = new Login();
+                login.ShowDialog();
+            }
         }
     }
 }
