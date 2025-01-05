@@ -93,7 +93,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             double discount = 0;
             dgvCash.Rows.Clear();
             cn.Open();
-            cm = new SqlCommand("SELECT c.id,c.pcode,c.pdesc,c.price, c.qty, c.disc, c.total FROM tbCart AS c INNER JOIN tbProduct AS p ON c.pcode=p.code WHERE c.transno LIKE @transno and c.status LIKE 'pending'",cn);
+            cm = new SqlCommand("SELECT c.id, c.pcode, p.pdesc, c.price, c.qty, c.disc, c.total FROM tbCart AS c INNER JOIN tbProduct AS p ON c.pcode = p.pcode WHERE c.transno LIKE @transno and c.status LIKE 'pending'",cn);
             cm.Parameters.AddWithValue("@transno",lblTranNo.Text);
             dr = cm.ExecuteReader();
             while (dr.Read())
