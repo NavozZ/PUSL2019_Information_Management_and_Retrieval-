@@ -674,7 +674,7 @@
             // 
             this.colAdd.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.colAdd.HeaderText = "";
-            this.colAdd.Image = ((System.Drawing.Image)(resources.GetObject("colAdd.Image")));
+            this.colAdd.Image = global::PUSL2019_Information_Management_and_Retrieval_.Properties.Resources.icons8_add_30;
             this.colAdd.MinimumWidth = 6;
             this.colAdd.Name = "colAdd";
             this.colAdd.Width = 6;
@@ -683,7 +683,7 @@
             // 
             this.colReduce.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.colReduce.HeaderText = "";
-            this.colReduce.Image = ((System.Drawing.Image)(resources.GetObject("colReduce.Image")));
+            this.colReduce.Image = global::PUSL2019_Information_Management_and_Retrieval_.Properties.Resources.icons8_reduce_30;
             this.colReduce.MinimumWidth = 6;
             this.colReduce.Name = "colReduce";
             this.colReduce.Width = 6;
@@ -692,7 +692,7 @@
             // 
             this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Delete.HeaderText = "";
-            this.Delete.Image = ((System.Drawing.Image)(resources.GetObject("Delete.Image")));
+            this.Delete.Image = global::PUSL2019_Information_Management_and_Retrieval_.Properties.Resources.icons8_delete_20;
             this.Delete.MinimumWidth = 6;
             this.Delete.Name = "Delete";
             this.Delete.Width = 6;
@@ -763,6 +763,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dgvCash;
         private System.Windows.Forms.PictureBox pictureBox3;
+        public System.Windows.Forms.Label lblUsername;
+        public System.Windows.Forms.Label lblTranNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -774,7 +776,5 @@
         private System.Windows.Forms.DataGridViewImageColumn colAdd;
         private System.Windows.Forms.DataGridViewImageColumn colReduce;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
-        public System.Windows.Forms.Label lblUsername;
-        public System.Windows.Forms.Label lblTranNo;
     }
 }
