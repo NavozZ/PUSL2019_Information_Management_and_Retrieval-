@@ -53,7 +53,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
                 cm.Parameters.AddWithValue("@price", price);
                 cm.Parameters.AddWithValue("@qty",int.Parse(txtQty.Text));
                 cm.Parameters.AddWithValue("@sdate",DateTime.Now );
-                cm.Parameters.AddWithValue("@cashier", cashier.lblUsername);
+                cm.Parameters.AddWithValue("@cashier", cashier.lblUsername.Text);
                 cm.ExecuteNonQuery();
                 cn.Close();
                 cashier.LoadCart();

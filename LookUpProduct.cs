@@ -36,14 +36,14 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         {
             int i = 0;
             dgvProduct.Rows.Clear();
-            cm = new SqlCommand("SELECT p.pcode, p.barcode, p.pdesc, b.brand, c.category, p.price, p.qty FROM tbProduct AS p INNER JOIN tbBrand AS b ON b.id = p.bid INNER JOIN tbCategory AS c ON c.id = p.cid WHERE CONCAT(p.pdesc, b.brand, c.category) LIKE @search");
-
+            cm = new SqlCommand("SELECT p.pcode, p.barcode, p.pdesc, b.brand, c.category, p.price, p.qty FROM tbProduct AS p INNER JOIN tbBrand AS b ON b.id = p.bid INNER JOIN tbCategory AS c ON c.id = p.cid WHERE CONCAT( p.pdesc , b.brand, c.category)  LIKE '%" + txtSearch.Text + "%'", cn);
             cn.Open();
             dr = cm.ExecuteReader();
             while (dr.Read())
             {
                 i++;
                 dgvProduct.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString());
+
             }
             dr.Close();
             cn.Close();

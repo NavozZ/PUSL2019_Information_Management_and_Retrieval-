@@ -18,10 +18,12 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         SqlCommand cm = new SqlCommand();
         DBConnect dbcon = new DBConnect();
         SqlDataReader dr;
+        string stitle = "Point of sales";
         public Cashier()
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
+            GetTrainNo();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -47,15 +49,10 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            try
-            {
-                LookUpProduct lookUp = new LookUpProduct(this);
-                lookUp.LoadProduct();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            Slide(btnSearch);
+            LookUpProduct lookup = new LookUpProduct(this);
+            lookup.LoadProduct();
+            lookup.ShowDialog();
         }
 
         private void btnDiscount_Click(object sender, EventArgs e)
@@ -96,7 +93,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             double discount = 0;
             dgvCash.Rows.Clear();
             cn.Open();
-            cm = new SqlCommand("SELECT c.id,c.pcode,c.pdesc,c.price,c.qty, c.disc, c.total FROM tbCart AS c INNER JOIN tbProduct AS p ON c.pcode=p.code WHERE c.transno LIKE @transno and c.status LIKE 'pending'",cn);
+            cm = new SqlCommand("SELECT c.id,c.pcode,c.pdesc,c.price, c.qty, c.disc, c.total FROM tbCart AS c INNER JOIN tbProduct AS p ON c.pcode=p.code WHERE c.transno LIKE @transno and c.status LIKE 'pending'",cn);
             cm.Parameters.AddWithValue("@transno",lblTranNo.Text);
             dr = cm.ExecuteReader();
             while (dr.Read())
@@ -129,9 +126,37 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
         public void GetTrainNo()
         {
-            string sdate = DateTime.Now.ToString("yyyyMMdd");
-            string transno = sdate + "1001";
-            lblTranNo.Text = transno;
+            try
+            {
+                string sdate = DateTime.Now.ToString("yyyyMMdd");
+                int Count;
+                string transno = sdate + "1001";
+                lblTranNo.Text = transno;
+                cn.Open();
+                cm = new SqlCommand("SELECT TOP 1 transno FROM tbCart WHERE transno LIKE '" + sdate + "%' ORDER BY id desc", cn);
+                dr = cm.ExecuteReader();
+                dr.Read();
+                if (dr.HasRows)
+                {
+                    transno = dr[0].ToString();
+                    Count = int.Parse(transno.Substring(8, 4));
+                    lblTranNo.Text = sdate + (Count + 1);
+                }
+                else
+                {
+                    transno = sdate + "1001";
+                    lblTranNo.Text = transno;
+                }
+                dr.Close();
+                cn.Close();
+            }
+            catch(Exception ex)
+            {
+               cn.Close();
+               MessageBox.Show(ex.Message,stitle);
+            } 
+            
+            
         }
 
         private void picClose_Click(object sender, EventArgs e)
