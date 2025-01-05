@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\POS\\",
+  "WorkspaceRootPath": "E:\\POS 2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|e:\\pos\\cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|e:\\pos 2\\cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|solutionrelative:cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|e:\\pos\\cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|solutionrelative:cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|e:\\pos 2\\barcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|solutionrelative:barcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|e:\\pos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|E:\\POS 2\\barcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|solutionrelative:barcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|e:\\pos 2\\cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35921B06-1FAC-48FA-98C0-7C85A3A3C898}|PUSL2019_Information_Management_and_Retrieval-.csproj|solutionrelative:cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,40 +34,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\POS\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\POS\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T18:32:14.353Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Cashier.cs",
-              "DocumentMoniker": "E:\\POS\\Cashier.cs",
+              "DocumentMoniker": "E:\\POS 2\\Cashier.cs",
               "RelativeDocumentMoniker": "Cashier.cs",
-              "ToolTip": "E:\\POS\\Cashier.cs",
+              "ToolTip": "E:\\POS 2\\Cashier.cs",
               "RelativeToolTip": "Cashier.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAADgvyUAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHQAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T18:12:22.402Z",
+              "WhenOpened": "2025-01-05T12:57:29.245Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Cashier.cs [Design]",
-              "DocumentMoniker": "E:\\POS\\Cashier.cs",
+              "DocumentMoniker": "E:\\POS 2\\Cashier.cs",
               "RelativeDocumentMoniker": "Cashier.cs",
-              "ToolTip": "E:\\POS\\Cashier.cs [Design]",
+              "ToolTip": "E:\\POS 2\\Cashier.cs [Design]",
               "RelativeToolTip": "Cashier.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T17:40:58.059Z",
+              "WhenOpened": "2025-01-05T12:53:48.451Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Barcode.cs",
+              "DocumentMoniker": "E:\\POS 2\\Barcode.cs",
+              "RelativeDocumentMoniker": "Barcode.cs",
+              "ToolTip": "E:\\POS 2\\Barcode.cs",
+              "RelativeToolTip": "Barcode.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAowFMAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T19:57:19.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Barcode.cs [Design]",
+              "DocumentMoniker": "E:\\POS 2\\Barcode.cs",
+              "RelativeDocumentMoniker": "Barcode.cs",
+              "ToolTip": "E:\\POS 2\\Barcode.cs [Design]",
+              "RelativeToolTip": "Barcode.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T19:33:42.913Z",
               "EditorCaption": " [Design]"
             }
           ]

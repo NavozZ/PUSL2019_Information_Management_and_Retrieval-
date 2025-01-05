@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ZXing;
+using DarrenLee.Media;
+using System.Text.RegularExpressions;
 
 namespace PUSL2019_Information_Management_and_Retrieval_
 {
-    public partial class Cashier : Form
+    public partial class Cashier : Form   
     {
+        Camera captureDevice = new Camera();
         public Cashier()
         {
             InitializeComponent();
@@ -85,9 +89,32 @@ namespace PUSL2019_Information_Management_and_Retrieval_
             lblTranNo.Text = transno;
         }
 
+        private void Cashier_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F8)
+            {
+                captureDevice.OnFrameArrived += captureDevice_OnFrameArrived;
+                captureDevice.Start();
+            }
+        }
+        
+        private void captureDevice_OnFrameArrived(object source, FrameArrivedEventArgs e)
+        {
+            Bitmap bitmap = (Bitmap)e.GetFrame();
+            BarcodeReader barcodeReader = new BarcodeReader();
+            var result = barcodeReader.Decode(bitmap);
+            if(result != null)
+            {
+                txtBarcod.Invoke(new MethodInvoker(delegate ()
+                { txtBarcod.Text = result.ToString(); }));
+            }
+             
+            
+        }
 
-       
-
-
+        private void Cashier_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            captureDevice.Stop();
+        }
     }
 }
