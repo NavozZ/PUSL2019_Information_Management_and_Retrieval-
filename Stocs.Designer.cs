@@ -1,6 +1,6 @@
 ﻿namespace PUSL2019_Information_Management_and_Retrieval_
 {
-    partial class Stocs
+    partial class STOCKENTRY
     {
         /// <summary>
         /// Required designer variable.
@@ -213,9 +213,9 @@
             this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.dgvStockIn);
             this.tabPage1.Controls.Add(this.panel2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 38);
+            this.tabPage1.Location = new System.Drawing.Point(4, 35);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(976, 519);
+            this.tabPage1.Size = new System.Drawing.Size(976, 522);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Stock In";
             // 
@@ -469,6 +469,7 @@
             this.dgvInStockHistory.RowTemplate.Height = 24;
             this.dgvInStockHistory.Size = new System.Drawing.Size(976, 337);
             this.dgvInStockHistory.TabIndex = 6;
+            this.dgvInStockHistory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInStockHistory_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -599,12 +600,12 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Filter By Date : From";
             // 
-            // Stocs
+            // STOCKENTRY
             // 
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.metroTabControl1);
-            this.Name = "Stocs";
+            this.Name = "STOCKENTRY";
             this.Text = "Stocs";
             this.panel1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

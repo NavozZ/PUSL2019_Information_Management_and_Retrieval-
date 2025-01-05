@@ -80,3 +80,27 @@ E:\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information
 E:\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Record.resources
 E:\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Stocs.resources
 E:\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Store.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval-.csproj.AssemblyReference.cache
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Adjustment.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Brand_Module.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Brand.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Cashier.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Category.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.CategoryModule.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.LookUpProduct.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Login.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Main.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.DASHBOARD.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Product.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.ProductModule.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.ProductStock.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Properties.Resources.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Qty.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Record.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.supplier.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.SupplierModule.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.STOCKENTRY.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Store.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.UserAccount.resources
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval-.csproj.GenerateResource.cache
+C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval-.csproj.CoreCompileInputs.cache
