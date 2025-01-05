@@ -60,5 +60,10 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
             }
         }
+
+        private void dgvProduct_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
