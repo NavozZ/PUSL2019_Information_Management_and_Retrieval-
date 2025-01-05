@@ -145,3 +145,5 @@ C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-
 C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval-.csproj.GenerateResource.cache
 C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval-.csproj.CoreCompileInputs.cache
 >>>>>>> master
+E:\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Barcode.resources
+E:\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.STOCKENTRY.resources
