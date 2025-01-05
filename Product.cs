@@ -20,7 +20,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         public Product()
         {
             InitializeComponent();
-            cn = new.SqlConnection(dbcon.myConnection());
+            cn = new SqlConnection(dbcon.myConnection());
             LoadProduct();
 
 
