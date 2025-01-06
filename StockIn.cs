@@ -70,7 +70,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         private void CbSupplier_SelectedIndexChanged(object sender, EventArgs e)
         {
             cn.Open();
-            cm = new SqlCommand("*SELECT*FROM tbSupplier WHERE supplier LIKE '"+cbSupplier.Text+"'",cn);
+            cm = new SqlCommand(" * SELECT * FROM tbSupplier WHERE supplier LIKE '" + cbSupplier.Text + "'",cn);
             dr = cm.ExecuteReader();
             dr.Read();
             if(dr.HasRows)

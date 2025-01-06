@@ -1,4 +1,7 @@
-﻿namespace PUSL2019_Information_Management_and_Retrieval_
+﻿using System.Collections.Generic;
+using System.Windows.Forms;
+
+namespace PUSL2019_Information_Management_and_Retrieval_
 {
     partial class ProductStock
     {
@@ -26,6 +29,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
+        [System.Obsolete]
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductStock));
@@ -41,7 +45,7 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Select = new System.Windows.Forms.DataGridViewImageColumn();
+            this.select = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBtnAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
@@ -165,7 +169,7 @@
             this.Column2,
             this.Column4,
             this.Column8,
-            this.Select});
+            this.select});
             this.dgvProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvProduct.EnableHeadersVisualStyles = false;
             this.dgvProduct.Location = new System.Drawing.Point(0, 0);
@@ -210,12 +214,12 @@
             // 
             // Select
             // 
-            this.Select.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Select.HeaderText = "";
-            this.Select.Image = global::PUSL2019_Information_Management_and_Retrieval_.Properties.Resources.icons8_select_30;
-            this.Select.MinimumWidth = 6;
-            this.Select.Name = "Select";
-            this.Select.Width = 6;
+            this.select.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.select.HeaderText = "";
+            this.select.Image = global::PUSL2019_Information_Management_and_Retrieval_.Properties.Resources.icons8_select_30;
+            this.select.MinimumWidth = 6;
+            this.select.Name = "Select";
+            this.select.Width = 6;
             // 
             // ProductStock
             // 
@@ -237,6 +241,12 @@
 
         }
 
+        public override bool Equals(object obj)
+        {
+            return obj is ProductStock stock &&
+                   EqualityComparer<DataGridViewImageColumn>.Default.Equals(select, stock.select);
+        }
+
         #endregion
         private System.Windows.Forms.Panel panel1;
         private MetroFramework.Controls.MetroTextBox txtSearch;
@@ -249,6 +259,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewImageColumn Select;
+        private System.Windows.Forms.DataGridViewImageColumn select;
     }
 }
