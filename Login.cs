@@ -28,6 +28,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
+            txtName.Focus();
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -50,7 +51,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string _username = "", _name = "", role = "";
+            string _username = "", _name = "", _role = "";
             try
             {
                 bool found;
@@ -83,22 +84,65 @@ namespace PUSL2019_Information_Management_and_Retrieval_
                     if(!_isactive)
                     
                     {
-                        MessageBox.Show("Account Is Inactive.Unable to login","Inactive Account",MessageBoxButtons,MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                        MessageBox.Show("Account Is Inactive.Unable to login","Inactive Account",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                         return;
                     }
                     if(_role=="Cashier")
                     {
-                        MessageBox.Show("Welcome " + _name + "|", "ACCESS GRANTED", MessageBoxButtons.OK, Messa)
+                        MessageBox.Show("Welcome " + _name + "|", "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        txtName.Clear();
+                        txtPass.Clear();
+                        this.Hide();
+                        Cashier cashier = new Cashier();
+                        cashier.lblUsername.Text= _username;  
+                        cashier.lblname.Text= _name + "|" + _role;
+                        cashier.ShowDialog();   
+                    }
+                    else 
+                    
+                    {
+                        MessageBox.Show("Welcome " + _name + "|", "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        txtName.Clear();
+                        txtPass.Clear();
+                        this.Hide();
+                        Main main = new Main();
+                        main.lblUsername.Text= _username;
+                      //  main.lblName.Text = _name;
+                        main.ShowDialog();
                     }
 
                 }
+
+                else
+                {
+                    MessageBox.Show("Invalid username and password!", "ACCESS DENIED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             } 
             
-            catch(Exception)
+            catch(Exception ex)
 
             {
-
+                   cn.Close();
+                MessageBox.Show(ex.Message,"Ërror",MessageBoxButtons.OK, MessageBoxIcon.Error); 
             }    
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Exit Application?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+
+        }
+
+        private void txtPass_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == 13) 
+            
+            {
+                btnLogin.PerformClick();  
+            }
         }
     }
 }

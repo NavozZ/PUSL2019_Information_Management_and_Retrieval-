@@ -106,3 +106,36 @@ C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-
 C:\Users\Dell\source\repos\Back 5\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval-.csproj.CoreCompileInputs.cache
 E:\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.STOCKENTRY.resources
 E:\PUSL2019_Information_Management_and_Retrieval-\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.StockIn.resources
+E:\Latest Clone IMR P\bin\Debug\PUSL2019_Information_Management_and_Retrieval-.exe.config
+E:\Latest Clone IMR P\bin\Debug\PUSL2019_Information_Management_and_Retrieval-.exe
+E:\Latest Clone IMR P\bin\Debug\PUSL2019_Information_Management_and_Retrieval-.pdb
+E:\Latest Clone IMR P\bin\Debug\MetroFramework.Design.dll
+E:\Latest Clone IMR P\bin\Debug\MetroFramework.dll
+E:\Latest Clone IMR P\bin\Debug\MetroFramework.Fonts.dll
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval-.csproj.AssemblyReference.cache
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Adjustment.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Brand_Module.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Brand.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Cashier.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Category.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.CategoryModule.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Login.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.LookUpProduct.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Main.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.DASHBOARD.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Product.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.ProductModule.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.ProductStock.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Properties.Resources.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Qty.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Record.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.supplier.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.SupplierModule.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.StockIn.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.Store.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval_.UserAccount.resources
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval-.csproj.GenerateResource.cache
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval-.csproj.CoreCompileInputs.cache
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval-.csproj.CopyComplete
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval-.exe
+E:\Latest Clone IMR P\obj\Debug\PUSL2019_Information_Management_and_Retrieval-.pdb
