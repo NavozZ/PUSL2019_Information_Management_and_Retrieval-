@@ -73,6 +73,12 @@
     <Compile Include="Brand.Designer.cs">
       <DependentUpon>Brand.cs</DependentUpon>
     </Compile>
+    <Compile Include="CancelOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelOrder.Designer.cs">
+      <DependentUpon>CancelOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cashier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,12 @@
     </Compile>
     <Compile Include="CategoryModule.Designer.cs">
       <DependentUpon>CategoryModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailySale1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailySale1.Designer.cs">
+      <DependentUpon>DailySale1.cs</DependentUpon>
     </Compile>
     <Compile Include="DBConnect.cs" />
     <Compile Include="Login.cs">
@@ -187,6 +199,9 @@
     <EmbeddedResource Include="Brand.resx">
       <DependentUpon>Brand.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CancelOrder.resx">
+      <DependentUpon>CancelOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cashier.resx">
       <DependentUpon>Cashier.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CategoryModule.resx">
       <DependentUpon>CategoryModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailySale1.resx">
+      <DependentUpon>DailySale1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

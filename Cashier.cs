@@ -73,6 +73,8 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         private void btnDSales_Click(object sender, EventArgs e)
         {
             Slide(btnDSales);
+            DailySale1 dailySale = new DailySale1();
+            dailySale.ShowDialog();
         }
 
         private void btnPass_Click(object sender, EventArgs e)
