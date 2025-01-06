@@ -16,7 +16,7 @@ namespace PUSL2019_Information_Management_and_Retrieval_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StockIn());
+            Application.Run(new Main());
         }
     }
 }
