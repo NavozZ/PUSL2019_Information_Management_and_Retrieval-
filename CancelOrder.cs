@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace PUSL2019_Information_Management_and_Retrieval_
 {
-    public partial class STORE : Form
+    public partial class CancelOrder : Form
     {
-        public STORE()
+        public CancelOrder()
         {
             InitializeComponent();
-        }
-
-        private void Store_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
